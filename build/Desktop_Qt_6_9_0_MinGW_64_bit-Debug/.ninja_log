@@ -1,0 +1,22 @@
+# ninja log v6
+43	168	7679217867819802	C:/Users/Administrator/Desktop/saglikocagi/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	1d340f3b410d93a6
+649	2932	7679214503705399	CMakeFiles/saglikocagi.dir/saglikocagi_autogen/mocs_compilation.cpp.obj	126a214be10ed003
+163	349	7679215756634055	C:/Users/Administrator/Desktop/saglikocagi/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/saglikocagi_autogen/timestamp	e754d6381e5edd24
+163	349	7679215756634055	C:/Users/Administrator/Desktop/saglikocagi/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/saglikocagi_autogen/mocs_compilation.cpp	e754d6381e5edd24
+135	1088	7679217893715054	build.ninja	52a41c8de376f83a
+163	349	7679215756634055	saglikocagi_autogen/timestamp	e754d6381e5edd24
+163	349	7679215756634055	saglikocagi_autogen/mocs_compilation.cpp	e754d6381e5edd24
+1646	2704	7679187979942991	CMakeFiles/saglikocagi.dir/Veri/Siniflar/hasta.cpp.obj	f2c4fa3eb371177c
+667	2983	7679214503885444	CMakeFiles/saglikocagi.dir/Veri/Siniflar/doktor.cpp.obj	86a769ce29e57f65
+13370	15369	7679188097178352	CMakeFiles/saglikocagi.dir/Veri/Siniflar/insan.cpp.obj	4398b50985a130e
+654	10572	7679214503755392	CMakeFiles/saglikocagi.dir/main.cpp.obj	2e8c0a188a70eb0c
+350	588	7679215758619655	CMakeFiles/saglikocagi.dir/Veri/Siniflar/idlisinif.cpp.obj	5f6a63e27a5f521e
+589	751	7679215761004224	saglikocagi.exe	f7bdd24abcce285c
+162	208	7679214471165471	CMakeFiles/clean.additional	baedbe210acaa455
+208	223	7679214471749046	clean	577b940aee94fbd7
+169	2894	7679217893715054	build.ninja	52a41c8de376f83a
+33	161	7679217895795005	C:/Users/Administrator/Desktop/saglikocagi/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	1d340f3b410d93a6
+175	358	7679217897247967	saglikocagi_autogen/timestamp	e754d6381e5edd24
+175	358	7679217897247967	saglikocagi_autogen/mocs_compilation.cpp	e754d6381e5edd24
+175	358	7679217897247967	C:/Users/Administrator/Desktop/saglikocagi/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/saglikocagi_autogen/timestamp	e754d6381e5edd24
+175	358	7679217897247967	C:/Users/Administrator/Desktop/saglikocagi/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/saglikocagi_autogen/mocs_compilation.cpp	e754d6381e5edd24
