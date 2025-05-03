@@ -43,3 +43,53 @@ void ZIYARET::setTedavinotlari(const QString &newTedavinotlari)
 {
     _tedavinotlari = newTedavinotlari;
 }
+
+DOKTOR *ZIYARET::doktorid() const
+{
+    return _doktorid;
+}
+
+void ZIYARET::setDoktorid(DOKTOR *newDoktorid)
+{
+    _doktorid = newDoktorid;
+}
+
+HASTA *ZIYARET::hastaid() const
+{
+    return _hastaid;
+}
+
+void ZIYARET::setHastaid(HASTA *newHastaid)
+{
+    _hastaid = newHastaid;
+}
+
+QList<BULGU *> ZIYARET::bulgular() const
+{
+    return _bulgular;
+}
+
+void ZIYARET::setBulgular(const QList<BULGU *> &newBulgular)
+{
+    _bulgular = newBulgular;
+}
+
+QList<ISTENENTETKIK *> ZIYARET::istenentetkikler() const
+{
+    return _istenentetkikler;
+}
+
+void ZIYARET::setIstenentetkikler(const QList<ISTENENTETKIK *> &newIstenentetkikler)
+{
+    _istenentetkikler = newIstenentetkikler;
+}
+
+RECETE *ZIYARET::receteid() const
+{
+    return _receteid;
+}
+
+void ZIYARET::setReceteid(RECETE *newReceteid)
+{
+    _receteid = newReceteid;
+}

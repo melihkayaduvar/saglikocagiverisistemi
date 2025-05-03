@@ -3,10 +3,13 @@
 #include "insan.h"
 #include "../Araclar/enums.h"
 
+class ZIYARET;
+
 class HASTA:public Insan{
 private:
     HASTA();
     HASTA(const HASTA& kaynak);
+    template <class T> friend class TABLO;
 public:
     QString tckimlik() const;
     void setTckimlik(const QString &newTckimlik);
@@ -29,6 +32,9 @@ public:
     CinsiyetEnum cinsiyet() const;
     void setCinsiyet(CinsiyetEnum newCinsiyet);
 
+    QList<ZIYARET *> ziyaretler() const;
+    void setZiyaretler(const QList<ZIYARET *> &newZiyaretler);
+
 private:
     QString _tckimlik;
     QDate _dogumTarihi;
@@ -37,4 +43,6 @@ private:
     QString _kanGrubu;
     QStringList _alerjiler;
     QStringList _kronikHastaliklar;
+
+    QList<ZIYARET*> _ziyaretler;
 };

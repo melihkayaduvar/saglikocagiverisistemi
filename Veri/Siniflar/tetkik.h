@@ -7,6 +7,7 @@ class TETKIK:public IdliSinif
 private:
     TETKIK();
     TETKIK(const TETKIK& kaynak);
+    template <class T> friend class TABLO;
 public:
     QString ad() const;
     void setAd(const QString &newAd);

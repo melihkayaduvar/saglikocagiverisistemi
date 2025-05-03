@@ -168,7 +168,6 @@
 			[
 				0,
 				1,
-				3,
 				5,
 				7,
 				9,
@@ -178,18 +177,19 @@
 				17,
 				19,
 				21,
-				23
+				23,
+				25
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "saglikocagi_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "saglikocagi_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "saglikocagi_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "saglikocagi::@6890427a1f51a3e7e1df",
@@ -256,7 +256,6 @@
 			[
 				0,
 				1,
-				3,
 				5,
 				7,
 				9,
@@ -266,7 +265,8 @@
 				17,
 				19,
 				21,
-				23
+				23,
+				25
 			]
 		},
 		{
@@ -274,13 +274,14 @@
 			"sourceIndexes" : 
 			[
 				2,
-				25
+				27
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
+				3,
 				4,
 				6,
 				8,
@@ -291,14 +292,15 @@
 				18,
 				20,
 				22,
-				24
+				24,
+				26
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				26
+				28
 			]
 		}
 	],
@@ -321,6 +323,16 @@
 			"backtrace" : 1,
 			"path" : "saglikocagi_tr_TR.ts",
 			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Veri/Araclar/TABLO.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Veri/Araclar/enums.h",
+			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 1,

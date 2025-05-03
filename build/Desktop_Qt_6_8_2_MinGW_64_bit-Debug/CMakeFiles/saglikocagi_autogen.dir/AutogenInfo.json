@@ -179,6 +179,18 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/MyCodes/QT/saglikocagiodev/Veri/Araclar/TABLO.h",
+			"MU",
+			"UNXDI5R6V6/moc_TABLO.cpp",
+			null
+		],
+		[
+			"C:/MyCodes/QT/saglikocagiodev/Veri/Araclar/TABLO_TANIMLARI.h",
+			"MU",
+			"UNXDI5R6V6/moc_TABLO_TANIMLARI.cpp",
+			null
+		],
+		[
 			"C:/MyCodes/QT/saglikocagiodev/Veri/Araclar/enums.h",
 			"MU",
 			"UNXDI5R6V6/moc_enums.cpp",

@@ -1,7 +1,10 @@
 #pragma once
 
+
 #include <QString>
 #include <QDateTime>
+
+#include "../Araclar/TABLO.h"
 
 class IdliSinif{
 public:

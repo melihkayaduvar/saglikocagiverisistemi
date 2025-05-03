@@ -8,8 +8,9 @@ class BULGU:public IdliSinif
 private:
     BULGU();
     BULGU(const BULGU& kaynak);
+    template <class T> friend class TABLO;
 public:
-   QString aciklama() const;
+    QString aciklama() const;
     void setAciklama(const QString &newAciklama);
 
     BulguTipiEnum tip() const;

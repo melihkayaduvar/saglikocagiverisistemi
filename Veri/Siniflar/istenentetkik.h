@@ -8,6 +8,7 @@ class ISTENENTETKIK:public IdliSinif
 private:
     ISTENENTETKIK();
     ISTENENTETKIK(const ISTENENTETKIK& kaynak);
+    template <class T> friend class TABLO;
 public:
 
     QDate istekTarihi() const;

@@ -22,3 +22,13 @@ void RECETE::setGecerlilikSuresi(quint32 newGecerlilikSuresi)
 {
     _gecerlilikSuresi = newGecerlilikSuresi;
 }
+
+QList<RECETEKALEMI *> RECETE::kalemler() const
+{
+    return _kalemler;
+}
+
+void RECETE::setKalemler(const QList<RECETEKALEMI *> &newKalemler)
+{
+    _kalemler = newKalemler;
+}

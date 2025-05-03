@@ -43,3 +43,13 @@ void RECETEKALEMI::setAdet(quint8 newAdet)
 {
     _adet = newAdet;
 }
+
+ILAC *RECETEKALEMI::ilac() const
+{
+    return _ilac;
+}
+
+void RECETEKALEMI::setIlac(ILAC *newIlac)
+{
+    _ilac = newIlac;
+}

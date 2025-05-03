@@ -75,6 +75,8 @@ endif()
 # _directory_contents at C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/MyCodes/QT/saglikocagiodev/*.h")
 set(OLD_GLOB
+  "C:/MyCodes/QT/saglikocagiodev/Veri/Araclar/TABLO.h"
+  "C:/MyCodes/QT/saglikocagiodev/Veri/Araclar/TABLO_TANIMLARI.h"
   "C:/MyCodes/QT/saglikocagiodev/Veri/Araclar/enums.h"
   "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/bulgu.h"
   "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/doktor.h"

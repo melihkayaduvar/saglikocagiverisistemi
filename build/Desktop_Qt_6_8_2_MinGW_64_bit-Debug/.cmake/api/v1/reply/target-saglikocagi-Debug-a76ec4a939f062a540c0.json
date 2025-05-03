@@ -168,7 +168,6 @@
 			[
 				0,
 				1,
-				4,
 				6,
 				8,
 				10,
@@ -178,18 +177,19 @@
 				18,
 				20,
 				22,
-				24
+				24,
+				26
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "saglikocagi_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "saglikocagi_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "saglikocagi_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "saglikocagi::@6890427a1f51a3e7e1df",
@@ -256,7 +256,6 @@
 			[
 				0,
 				1,
-				4,
 				6,
 				8,
 				10,
@@ -266,7 +265,8 @@
 				18,
 				20,
 				22,
-				24
+				24,
+				26
 			]
 		},
 		{
@@ -274,7 +274,7 @@
 			"sourceIndexes" : 
 			[
 				2,
-				26
+				28
 			]
 		},
 		{
@@ -282,6 +282,7 @@
 			"sourceIndexes" : 
 			[
 				3,
+				4,
 				5,
 				7,
 				9,
@@ -292,14 +293,15 @@
 				19,
 				21,
 				23,
-				25
+				25,
+				27
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				27
+				29
 			]
 		}
 	],
@@ -322,6 +324,16 @@
 			"backtrace" : 1,
 			"path" : "saglikocagi_tr_TR.ts",
 			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Veri/Araclar/TABLO.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Veri/Araclar/TABLO_TANIMLARI.h",
+			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 1,

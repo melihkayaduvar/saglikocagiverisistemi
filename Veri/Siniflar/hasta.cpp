@@ -74,3 +74,13 @@ void HASTA::setCinsiyet(CinsiyetEnum newCinsiyet)
 {
     _cinsiyet = newCinsiyet;
 }
+
+QList<ZIYARET *> HASTA::ziyaretler() const
+{
+    return _ziyaretler;
+}
+
+void HASTA::setZiyaretler(const QList<ZIYARET *> &newZiyaretler)
+{
+    _ziyaretler = newZiyaretler;
+}
