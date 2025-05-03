@@ -1,9 +1,8 @@
 #pragma once
 
-#include "idlisinif.h"
 #include "insan.h"
 
-class DOKTOR:public Idlisinif,public Insan{
+class DOKTOR:public Insan{
 private:
     DOKTOR();
     DOKTOR(const DOKTOR& kaynak);

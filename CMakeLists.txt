@@ -14,13 +14,12 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core LinguistTools)
 
 set(TS_FILES saglikocagi_tr_TR.ts)
 
+file(GLOB SINIFLAR_SRC "Veri/Siniflar/*.cpp" "Veri/Siniflar/*.h" "Veri/Araclar/*.h")
+
 add_executable(saglikocagi
   main.cpp
   ${TS_FILES}
-  Veri/Siniflar/idlisinif.h Veri/Siniflar/idlisinif.cpp
-  Veri/Siniflar/doktor.h Veri/Siniflar/doktor.cpp
-  Veri/Siniflar/insan.h Veri/Siniflar/insan.cpp
-
+  ${SINIFLAR_SRC}
 )
 target_link_libraries(saglikocagi Qt${QT_VERSION_MAJOR}::Core)
 

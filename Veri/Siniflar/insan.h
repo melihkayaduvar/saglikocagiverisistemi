@@ -1,15 +1,11 @@
 #pragma once
 
-#include <QString>
-#include <QDateTime>
-
 #include "idlisinif.h"
 
-class Insan:public IdliSınıf{
-private:
+class Insan:public IdliSinif{
+public:
     Insan();
     Insan(const Insan& kaynak);
-public:
     QString adi() const;
     void setadi(const QString newadi);
     QString soyadi() const;

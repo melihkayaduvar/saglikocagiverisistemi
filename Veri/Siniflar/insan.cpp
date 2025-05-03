@@ -1,8 +1,7 @@
 #include "insan.h"
 
-Insan::Insan():IdliSınıf{},_adi{""},_soyadi{""},_telefon{""} {}
-
-Insan::Insan(const Insan &kaynak):IdliSınıf{kaynak},_adi{kaynak._adi},_soyadi{kaynak._soyadi},_telefon{kaynak._telefon} {}
+Insan::Insan():IdliSinif{},_adi{""},_soyadi{""},_telefon{""} {}
+Insan::Insan(const Insan &kaynak):IdliSinif{kaynak},_adi{kaynak._adi},_soyadi{kaynak._soyadi},_telefon{kaynak._telefon} {}
 
 QString Insan::adi() const
 {

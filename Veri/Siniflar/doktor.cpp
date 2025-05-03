@@ -1,7 +1,7 @@
 #include "doktor.h"
 
-DOKTOR::DOKTOR():IdliSınıf{},_uzmanlikAlani{""} {}
-DOKTOR::DOKTOR(const DOKTOR &kaynak):IdliSinif{kaynak},_uzmanlikAlani{""} {}
+DOKTOR::DOKTOR():Insan{},_uzmanlikAlani{""} {}
+DOKTOR::DOKTOR(const DOKTOR &kaynak):Insan{kaynak},_uzmanlikAlani{""} {}
 
 QString DOKTOR::uzmanlikAlani() const
 {

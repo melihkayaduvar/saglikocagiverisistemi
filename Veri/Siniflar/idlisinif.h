@@ -1,11 +1,12 @@
 #pragma once
 
-#include <qtypes.h>
+#include <QString>
+#include <QDateTime>
 
-class IdliSınıf{
+class IdliSinif{
 public:
-    IdliSınıf();
-    IdliSınıf(const IdliSınıf& kaynak);
+    IdliSinif();
+    IdliSinif(const IdliSinif& kaynak);
     quint32 id() const;
     void setId(quint32 newid);
 private:
