@@ -75,12 +75,12 @@ void HASTA::setCinsiyet(CinsiyetEnum newCinsiyet)
     _cinsiyet = newCinsiyet;
 }
 
-QList<ZIYARET *> HASTA::ziyaretler() const
+QVector<quint32> HASTA::ziyaretIdleri() const
 {
-    return _ziyaretler;
+    return _ziyaretIdleri;
 }
 
-void HASTA::setZiyaretler(const QList<ZIYARET *> &newZiyaretler)
+void HASTA::setZiyaretIdleri(const QVector<quint32> &newZiyaretler)
 {
-    _ziyaretler = newZiyaretler;
+    _ziyaretIdleri = newZiyaretler;
 }

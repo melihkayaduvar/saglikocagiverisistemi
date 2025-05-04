@@ -32,8 +32,8 @@ public:
     CinsiyetEnum cinsiyet() const;
     void setCinsiyet(CinsiyetEnum newCinsiyet);
 
-    QList<ZIYARET *> ziyaretler() const;
-    void setZiyaretler(const QList<ZIYARET *> &newZiyaretler);
+    QVector<quint32> ziyaretIdleri() const;
+    void setZiyaretIdleri(const QVector<quint32>& yeniListe);
 
 private:
     QString _tckimlik;
@@ -44,5 +44,5 @@ private:
     QStringList _alerjiler;
     QStringList _kronikHastaliklar;
 
-    QList<ZIYARET*> _ziyaretler;
+    QVector<quint32> _ziyaretIdleri;
 };

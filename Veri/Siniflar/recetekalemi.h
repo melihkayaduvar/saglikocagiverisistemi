@@ -9,6 +9,8 @@ private:
     RECETEKALEMI();
     RECETEKALEMI(const RECETEKALEMI& kaynak);
     template <class T> friend class TABLO;
+    friend QDataStream &operator<<(QDataStream &, const RECETEKALEMI &);
+    friend QDataStream &operator>>(QDataStream &, RECETEKALEMI &);
 public:
 
     QString kullanimSekli() const;
@@ -20,8 +22,8 @@ public:
     quint8 adet() const;
     void setAdet(quint8 newAdet);
 
-    ILAC *ilac() const;
-    void setIlac(ILAC *newIlac);
+    quint32 ilacid() const;
+    void setIlacID(quint32 newIlacID);
 
 private:
     QString _kullanimSekli;
@@ -29,5 +31,5 @@ private:
     QString _periyot;
     quint8 _adet;
 
-    ILAC* _ilac;
+    quint32 _ilacid;
 };

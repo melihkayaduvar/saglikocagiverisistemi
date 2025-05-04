@@ -9,6 +9,8 @@ private:
     BULGU();
     BULGU(const BULGU& kaynak);
     template <class T> friend class TABLO;
+    friend QDataStream &operator<<(QDataStream &, const BULGU &);
+    friend QDataStream &operator>>(QDataStream &, BULGU &);
 public:
     QString aciklama() const;
     void setAciklama(const QString &newAciklama);

@@ -9,10 +9,12 @@ class ISTENENTETKIK;
 #include "recete.h"
 
 class ZIYARET:public IdliSinif{
-private:
+public:
     ZIYARET();
     ZIYARET(const ZIYARET& kaynak);
     template <class T> friend class TABLO;
+    friend QDataStream &operator<<(QDataStream &, const ZIYARET &);
+    friend QDataStream &operator>>(QDataStream &, ZIYARET &);
 public:
 
     QDate tarihsaat() const;
@@ -27,16 +29,16 @@ public:
     QString tedavinotlari() const;
     void setTedavinotlari(const QString &newTedavinotlari);
 
-    DOKTOR *doktorid() const;
-    void setDoktorid(DOKTOR *newDoktorid);
-    HASTA *hastaid() const;
-    void setHastaid(HASTA *newHastaid);
+    quint32 doktorid() const;
+    void setDoktorid(quint32 newDoktorid);
+    quint32 hastaid() const;
+    void setHastaid(quint32 newHastaid);
     QList<BULGU *> bulgular() const;
     void setBulgular(const QList<BULGU *> &newBulgular);
     QList<ISTENENTETKIK *> istenentetkikler() const;
     void setIstenentetkikler(const QList<ISTENENTETKIK *> &newIstenentetkikler);
-    RECETE *receteid() const;
-    void setReceteid(RECETE *newReceteid);
+    quint32 receteid() const;
+    void setReceteid(quint32 newReceteid);
 
 private:
     QDate _tarihsaat;
@@ -44,9 +46,10 @@ private:
     QString _tani;
     QString _tedavinotlari;
 
-    DOKTOR* _doktorid;
-    HASTA* _hastaid;
-    QList<BULGU*> _bulgular;
-    QList<ISTENENTETKIK*> _istenentetkikler;
-    RECETE* _receteid;
+    quint32 _doktorid;
+    quint32 _hastaid;
+    quint32 _receteid;
+    QVector<BULGU*> _bulgular;
+    QVector<ISTENENTETKIK*> _istenentetkikler;
+
 };

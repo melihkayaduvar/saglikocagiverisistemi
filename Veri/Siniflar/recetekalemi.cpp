@@ -44,12 +44,35 @@ void RECETEKALEMI::setAdet(quint8 newAdet)
     _adet = newAdet;
 }
 
-ILAC *RECETEKALEMI::ilac() const
+quint32 RECETEKALEMI::ilacid() const
 {
-    return _ilac;
+    return _ilacid;
 }
 
-void RECETEKALEMI::setIlac(ILAC *newIlac)
+void RECETEKALEMI::setIlacID(quint32 newIlacID)
 {
-    _ilac = newIlac;
+    _ilacid = newIlacID;
+}
+
+QDataStream &operator<<(QDataStream &out, const RECETEKALEMI &z)
+{
+    out << z._kullanimSekli
+        << z._doz
+        << z._periyot
+        << z._adet
+        << z._ilacid;
+
+    return out;
+}
+
+QDataStream &operator>>(QDataStream &in, RECETEKALEMI &z)
+{
+    in >> z._kullanimSekli
+        >> z._doz
+        >> z._periyot
+        >> z._adet
+        >> z._ilacid;
+
+
+    return in;
 }

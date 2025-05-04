@@ -32,3 +32,23 @@ void BULGU::setKaydedilmeZamani(const QDate &newKaydedilmeZamani)
 {
     _kaydedilmeZamani = newKaydedilmeZamani;
 }
+
+
+QDataStream &operator<<(QDataStream &out, const BULGU &z)
+{
+    out << z._aciklama
+        << z._tip
+        << z._kaydedilmeZamani;
+
+    return out;
+}
+
+QDataStream &operator>>(QDataStream &in, BULGU &z)
+{
+    in >> z._aciklama
+        >> z._tip
+        >> z._kaydedilmeZamani;
+
+
+    return in;
+}

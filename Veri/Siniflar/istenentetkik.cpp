@@ -53,3 +53,27 @@ void ISTENENTETKIK::setDurum(TetkikDurumuEnum newDurum)
 {
     _durum = newDurum;
 }
+
+QDataStream &operator<<(QDataStream &out, const ISTENENTETKIK &z)
+{
+    out << z._istekTarihi
+        << z._sonucTarihi
+        << z._sonuc
+        << z._yorum
+        << z._durum;
+
+    return out;
+}
+
+QDataStream &operator>>(QDataStream &in, ISTENENTETKIK &z)
+{
+    in >> z._istekTarihi
+        >> z._sonucTarihi
+        >> z._sonuc
+        >> z._yorum
+        >> z._durum;
+
+
+    return in;
+}
+

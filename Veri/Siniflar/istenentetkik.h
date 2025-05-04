@@ -9,6 +9,8 @@ private:
     ISTENENTETKIK();
     ISTENENTETKIK(const ISTENENTETKIK& kaynak);
     template <class T> friend class TABLO;
+    friend QDataStream &operator<<(QDataStream &, const ISTENENTETKIK &);
+    friend QDataStream &operator>>(QDataStream &, ISTENENTETKIK &);
 public:
 
     QDate istekTarihi() const;

@@ -2,6 +2,7 @@
 
 #include <functional>
 #include <QVector>
+#include <memory.h>
 
 template <class T>
 class TABLO{
@@ -13,7 +14,7 @@ public:
 
     TABLO(){}
     VeriPointer olustur(){
-        return std::make_shared<VeriSinifi>();
+        return VeriPointer(new VeriSinifi);
     }
     void ekle(VeriPointer yeni_nesne){
         yeni_nesne->setId(_sonid++);
@@ -68,4 +69,6 @@ public:
 private:
     VeriDizisi _elemanlar;
     quint32 _sonid;
+
+    friend class VERITABANI;
 };

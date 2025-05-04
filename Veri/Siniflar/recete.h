@@ -24,5 +24,5 @@ private:
     QDate _tarih;
     quint32 _gecerlilikSuresi;
 
-    QList<RECETEKALEMI*> _kalemler;
+    QVector<RECETEKALEMI*> _kalemler;
 };

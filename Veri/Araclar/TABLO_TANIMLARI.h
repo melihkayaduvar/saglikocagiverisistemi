@@ -14,3 +14,11 @@
 
 using DoktorTablosu = TABLO<DOKTOR>;
 using HastaTablosu = TABLO<HASTA>;
+using ZiyaretTablosu = TABLO<ZIYARET>;
+using BulguTablosu = TABLO<BULGU>;
+using IstenenTetkikTablosu = TABLO<ISTENENTETKIK>;
+
+using ReceteTablosu = TABLO<RECETE>;
+using TetkikTablosu = TABLO<TETKIK>;
+using IlacTablosu = TABLO<ILAC>;
+using ReceteKalemiTablosu = TABLO<RECETEKALEMI>;
