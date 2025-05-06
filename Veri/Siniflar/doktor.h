@@ -1,4 +1,4 @@
-#pragma once
+ #pragma once
 
 #include "insan.h"
 
@@ -8,9 +8,13 @@ private:
     DOKTOR(const DOKTOR& kaynak);
     template <class T> friend class TABLO;
 public:
-    QString uzmanlikAlani()const;
-    void setuzmanlikAlani(const QString newuzmanlikalani);
+    QString &diplomaNo();
+    void setdiplomano(const QString &newdiplomano);
+
+    QString &uzmanlikAlani();
+    void setuzmanlikAlani(const QString &newuzmanlikalani);
 private:
+    QString _diplomaNo;
     QString _uzmanlikAlani;
 };
 

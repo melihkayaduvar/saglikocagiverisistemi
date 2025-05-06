@@ -4,7 +4,7 @@ RECETEKALEMI::RECETEKALEMI():IdliSinif{},_kullanimSekli{""},_doz{""},_periyot{""
 RECETEKALEMI::RECETEKALEMI(const RECETEKALEMI& kaynak):IdliSinif{kaynak},_kullanimSekli{kaynak._kullanimSekli}
     ,_doz{kaynak._doz},_periyot{kaynak._periyot},_adet{kaynak._adet} {}
 
-QString RECETEKALEMI::kullanimSekli() const
+QString &RECETEKALEMI::kullanimSekli()
 {
     return _kullanimSekli;
 }
@@ -14,7 +14,7 @@ void RECETEKALEMI::setKullanimSekli(const QString &newKullanimSekli)
     _kullanimSekli = newKullanimSekli;
 }
 
-QString RECETEKALEMI::doz() const
+QString &RECETEKALEMI::doz()
 {
     return _doz;
 }
@@ -24,7 +24,7 @@ void RECETEKALEMI::setDoz(const QString &newDoz)
     _doz = newDoz;
 }
 
-QString RECETEKALEMI::periyot() const
+QString &RECETEKALEMI::periyot()
 {
     return _periyot;
 }
@@ -44,7 +44,7 @@ void RECETEKALEMI::setAdet(quint8 newAdet)
     _adet = newAdet;
 }
 
-quint32 RECETEKALEMI::ilacid() const
+/*quint32 RECETEKALEMI::ilacid() const
 {
     return _ilacid;
 }
@@ -52,9 +52,9 @@ quint32 RECETEKALEMI::ilacid() const
 void RECETEKALEMI::setIlacID(quint32 newIlacID)
 {
     _ilacid = newIlacID;
-}
+}*/
 
-QDataStream &operator<<(QDataStream &out, const RECETEKALEMI &z)
+/*QDataStream &operator<<(QDataStream &out, const RECETEKALEMI &z)
 {
     out << z._kullanimSekli
         << z._doz
@@ -75,4 +75,4 @@ QDataStream &operator>>(QDataStream &in, RECETEKALEMI &z)
 
 
     return in;
-}
+}*/

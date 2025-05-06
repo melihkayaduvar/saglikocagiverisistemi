@@ -4,27 +4,27 @@ ISTENENTETKIK::ISTENENTETKIK():IdliSinif(),_istekTarihi{},_sonucTarihi{},_sonuc{
 ISTENENTETKIK::ISTENENTETKIK(const ISTENENTETKIK& kaynak):IdliSinif(kaynak),_istekTarihi{kaynak._istekTarihi}
     ,_sonucTarihi{kaynak._sonucTarihi},_sonuc{kaynak._sonuc},_yorum{kaynak._yorum},_durum{kaynak._durum} {}
 
-QDate ISTENENTETKIK::istekTarihi() const
+QDateTime &ISTENENTETKIK::istekTarihi()
 {
     return _istekTarihi;
 }
 
-void ISTENENTETKIK::setIstekTarihi(const QDate &newIstekTarihi)
+void ISTENENTETKIK::setIstekTarihi(const QDateTime &newIstekTarihi)
 {
     _istekTarihi = newIstekTarihi;
 }
 
-QDate ISTENENTETKIK::sonucTarihi() const
+QDateTime &ISTENENTETKIK::sonucTarihi()
 {
     return _sonucTarihi;
 }
 
-void ISTENENTETKIK::setSonucTarihi(const QDate &newSonucTarihi)
+void ISTENENTETKIK::setSonucTarihi(const QDateTime &newSonucTarihi)
 {
     _sonucTarihi = newSonucTarihi;
 }
 
-QString ISTENENTETKIK::sonuc() const
+QString &ISTENENTETKIK::sonuc()
 {
     return _sonuc;
 }
@@ -34,7 +34,7 @@ void ISTENENTETKIK::setSonuc(const QString &newSonuc)
     _sonuc = newSonuc;
 }
 
-QString ISTENENTETKIK::yorum() const
+QString &ISTENENTETKIK::yorum()
 {
     return _yorum;
 }
@@ -54,7 +54,7 @@ void ISTENENTETKIK::setDurum(TetkikDurumuEnum newDurum)
     _durum = newDurum;
 }
 
-QDataStream &operator<<(QDataStream &out, const ISTENENTETKIK &z)
+/*QDataStream &operator<<(QDataStream &out, const ISTENENTETKIK &z)
 {
     out << z._istekTarihi
         << z._sonucTarihi
@@ -75,5 +75,5 @@ QDataStream &operator>>(QDataStream &in, ISTENENTETKIK &z)
 
 
     return in;
-}
+}*/
 

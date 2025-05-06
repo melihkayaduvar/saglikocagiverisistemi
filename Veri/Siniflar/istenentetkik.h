@@ -9,28 +9,28 @@ private:
     ISTENENTETKIK();
     ISTENENTETKIK(const ISTENENTETKIK& kaynak);
     template <class T> friend class TABLO;
-    friend QDataStream &operator<<(QDataStream &, const ISTENENTETKIK &);
-    friend QDataStream &operator>>(QDataStream &, ISTENENTETKIK &);
+    /*friend QDataStream &operator<<(QDataStream &, const ISTENENTETKIK &);
+    friend QDataStream &operator>>(QDataStream &, ISTENENTETKIK &);*/
 public:
 
-    QDate istekTarihi() const;
-    void setIstekTarihi(const QDate &newIstekTarihi);
+    QDateTime &istekTarihi();
+    void setIstekTarihi(const QDateTime &newIstekTarihi);
 
-    QDate sonucTarihi() const;
-    void setSonucTarihi(const QDate &newSonucTarihi);
+    QDateTime &sonucTarihi();
+    void setSonucTarihi(const QDateTime &newSonucTarihi);
 
-    QString sonuc() const;
+    QString &sonuc();
     void setSonuc(const QString &newSonuc);
 
-    QString yorum() const;
+    QString &yorum();
     void setYorum(const QString &newYorum);
 
-    TetkikDurumuEnum durum() const;
+    TetkikDurumuEnum durum()const;
     void setDurum(TetkikDurumuEnum newDurum);
 
 private:
-    QDate _istekTarihi;
-    QDate _sonucTarihi;
+    QDateTime _istekTarihi;
+    QDateTime _sonucTarihi;
     QString _sonuc;
     QString _yorum;
     TetkikDurumuEnum _durum;

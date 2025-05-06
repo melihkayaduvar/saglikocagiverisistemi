@@ -9,11 +9,13 @@ private:
     TETKIK(const TETKIK& kaynak);
     template <class T> friend class TABLO;
 public:
-    QString ad() const;
+    QString &ad() ;
     void setAd(const QString &newAd);
-    QString aciklama() const;
+
+    QString &aciklama() ;
     void setAciklama(const QString &newAciklama);
-    QString normalDegerler() const;
+
+    QString &normalDegerler() ;
     void setNormalDegerler(const QString &newNormalDegerler);
 
 private:

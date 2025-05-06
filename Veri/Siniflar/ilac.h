@@ -10,15 +10,19 @@ private:
     template <class T> friend class TABLO;
 public:
 
-    QString barkod() const;
+    QString &barkod() ;
     void setBarkod(const QString &newBarkod);
-    QString ad() const;
+
+    QString &ad() ;
     void setAd(const QString &newAd);
-    QString etkenMadde() const;
+
+    QString &etkenMadde() ;
     void setEtkenMadde(const QString &newEtkenMadde);
-    QString form() const;
+
+    QString &form() ;
     void setForm(const QString &newForm);
-    QString dozajBilgisi() const;
+
+    QString &dozajBilgisi() ;
     void setDozajBilgisi(const QString &newDozajBilgisi);
 
 private:

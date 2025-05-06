@@ -1,22 +1,22 @@
 #include "ziyaret.h"
-#include "bulgu.h"
-#include "istenentetkik.h"
+/*#include "bulgu.h"
+#include "istenentetkik.h"*/
 
 ZIYARET::ZIYARET():IdliSinif{},_tarihsaat{},_sikayet{""},_tani{""},_tedavinotlari{""} {}
 ZIYARET::ZIYARET(const ZIYARET& kaynak):IdliSinif{kaynak},_tarihsaat{kaynak._tarihsaat},_sikayet{kaynak._sikayet}
     ,_tani{kaynak._tani},_tedavinotlari{kaynak._tedavinotlari} {}
 
-QDate ZIYARET::tarihsaat() const
+QDateTime &ZIYARET::tarihsaat()
 {
     return _tarihsaat;
 }
 
-void ZIYARET::setTarihsaat(const QDate &newTarihsaat)
+void ZIYARET::setTarihsaat(const QDateTime &newTarihsaat)
 {
     _tarihsaat = newTarihsaat;
 }
 
-QString ZIYARET::sikayet() const
+QString &ZIYARET::sikayet()
 {
     return _sikayet;
 }
@@ -26,7 +26,7 @@ void ZIYARET::setSikayet(const QString &newSikayet)
     _sikayet = newSikayet;
 }
 
-QString ZIYARET::tani() const
+QString &ZIYARET::tani()
 {
     return _tani;
 }
@@ -36,7 +36,7 @@ void ZIYARET::setTani(const QString &newTani)
     _tani = newTani;
 }
 
-QString ZIYARET::tedavinotlari() const
+QString &ZIYARET::tedavinotlari()
 {
     return _tedavinotlari;
 }
@@ -46,7 +46,7 @@ void ZIYARET::setTedavinotlari(const QString &newTedavinotlari)
     _tedavinotlari = newTedavinotlari;
 }
 
-quint32 ZIYARET::doktorid() const
+/*quint32 ZIYARET::doktorid() const
 {
     return _doktorid;
 }
@@ -74,9 +74,9 @@ quint32 ZIYARET::receteid() const
 void ZIYARET::setReceteid(quint32 newReceteid)
 {
     _receteid = newReceteid;
-}
+}*/
 
-QList<BULGU *> ZIYARET::bulgular() const
+/*QList<BULGU *> ZIYARET::bulgular() const
 {
     return _bulgular;
 }
@@ -155,5 +155,5 @@ QDataStream &operator>>(QDataStream &in, ZIYARET &z)
     }
 
     return in;
-}
+}*/
 

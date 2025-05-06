@@ -5,7 +5,7 @@ HASTA::HASTA():Insan(),_tckimlik{""},_dogumTarihi{},
 HASTA::HASTA(const HASTA& kaynak):Insan(kaynak),_tckimlik{kaynak._tckimlik},_dogumTarihi{kaynak._dogumTarihi},
     _adres{kaynak._adres},_kanGrubu{kaynak._kanGrubu},_alerjiler{kaynak._alerjiler},_kronikHastaliklar{kaynak._kronikHastaliklar},_cinsiyet{kaynak._cinsiyet} {}
 
-QString HASTA::tckimlik() const
+QString &HASTA::tckimlik()
 {
     return _tckimlik;
 }
@@ -15,7 +15,7 @@ void HASTA::setTckimlik(const QString &newTckimlik)
     _tckimlik = newTckimlik;
 }
 
-QDate HASTA::dogumTarihi() const
+QDate &HASTA::dogumTarihi()
 {
     return _dogumTarihi;
 }
@@ -25,7 +25,7 @@ void HASTA::setDogumTarihi(const QDate &newDogumTarihi)
     _dogumTarihi = newDogumTarihi;
 }
 
-QString HASTA::adres() const
+QString &HASTA::adres()
 {
     return _adres;
 }
@@ -35,7 +35,7 @@ void HASTA::setAdres(const QString &newAdres)
     _adres = newAdres;
 }
 
-QString HASTA::kanGrubu() const
+QString &HASTA::kanGrubu()
 {
     return _kanGrubu;
 }
@@ -45,7 +45,7 @@ void HASTA::setKanGrubu(const QString &newKanGrubu)
     _kanGrubu = newKanGrubu;
 }
 
-QStringList HASTA::alerjiler() const
+QStringList &HASTA::alerjiler()
 {
     return _alerjiler;
 }
@@ -55,7 +55,7 @@ void HASTA::setAlerjiler(const QStringList &newAlerjiler)
     _alerjiler = newAlerjiler;
 }
 
-QStringList HASTA::kronikHastaliklar() const
+QStringList &HASTA::kronikHastaliklar()
 {
     return _kronikHastaliklar;
 }
@@ -75,7 +75,7 @@ void HASTA::setCinsiyet(CinsiyetEnum newCinsiyet)
     _cinsiyet = newCinsiyet;
 }
 
-QVector<quint32> HASTA::ziyaretIdleri() const
+/*QVector<quint32> HASTA::ziyaretIdleri() const
 {
     return _ziyaretIdleri;
 }
@@ -83,4 +83,4 @@ QVector<quint32> HASTA::ziyaretIdleri() const
 void HASTA::setZiyaretIdleri(const QVector<quint32> &newZiyaretler)
 {
     _ziyaretIdleri = newZiyaretler;
-}
+}*/

@@ -3,7 +3,7 @@
 RECETE::RECETE():IdliSinif{},_tarih{},_gecerlilikSuresi{0} {}
 RECETE::RECETE(const RECETE& kaynak):IdliSinif{kaynak},_tarih{kaynak._tarih},_gecerlilikSuresi{kaynak._gecerlilikSuresi} {}
 
-QDate RECETE::tarih() const
+QDate &RECETE::tarih()
 {
     return _tarih;
 }
@@ -23,7 +23,7 @@ void RECETE::setGecerlilikSuresi(quint32 newGecerlilikSuresi)
     _gecerlilikSuresi = newGecerlilikSuresi;
 }
 
-QList<RECETEKALEMI *> RECETE::kalemler() const
+/*QList<RECETEKALEMI *> RECETE::kalemler() const
 {
     return _kalemler;
 }
@@ -31,4 +31,4 @@ QList<RECETEKALEMI *> RECETE::kalemler() const
 void RECETE::setKalemler(const QList<RECETEKALEMI *> &newKalemler)
 {
     _kalemler = newKalemler;
-}
+}*/

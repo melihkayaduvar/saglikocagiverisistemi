@@ -1,22 +1,22 @@
 #pragma once
 
 enum class CinsiyetEnum {
-    Erkek,
-    Kadin,
-    Belirtilmemis
+    ERKEK,
+    KADIN,
+    BELIRTILMEMIS
 };
 
 enum class BulguTipiEnum {
-    Semptom,
-    FizikselMuayene,
-    Laboratuvar,
-    Goruntuleme
+    SEMPTOM,
+    FIZIKSEL_MUAYENE,
+    LABARATUVAR,
+    GORUNTULEME
 };
 
 enum class TetkikDurumuEnum {
-    Istendi,
-    OrnekAlindi,
-    Calisiliyor,
-    Sonuclandi,
-    IptalEdildi
+    ISTENDI,
+    ORNEK_ALINDI,
+    CALISILIYOR,
+    SONUCLANDI,
+    IPTAL_EDILDI
 };

@@ -10,7 +10,7 @@ private:
     VERITABANI();
     //Adım 2. public static bir fonksiyon eklenir.
 public:
-    static VERITABANI& taKendisi();
+    static VERITABANI& vt();
     //Adım 3. Cpp de
 
     DoktorTablosu& doktorlar();

@@ -54,7 +54,6 @@ set(OLD_GLOB
   "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/ziyaret.cpp"
   "C:/MyCodes/QT/saglikocagiodev/Veri/veritabani.cpp"
   "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CompilerIdCXX/CMakeCXXCompilerId.cpp"
-  "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/mocs_compilation.cpp"
   "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/saglikocagi_autogen/mocs_compilation.cpp"
   "C:/MyCodes/QT/saglikocagiodev/main.cpp"
@@ -91,7 +90,6 @@ set(OLD_GLOB
   "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/tetkik.h"
   "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/ziyaret.h"
   "C:/MyCodes/QT/saglikocagiodev/Veri/veritabani.h"
-  "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/moc_predefs.h"
   "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/saglikocagi_autogen/moc_predefs.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

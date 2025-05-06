@@ -9,20 +9,20 @@ private:
     BULGU();
     BULGU(const BULGU& kaynak);
     template <class T> friend class TABLO;
-    friend QDataStream &operator<<(QDataStream &, const BULGU &);
-    friend QDataStream &operator>>(QDataStream &, BULGU &);
+    /*friend QDataStream &operator<<(QDataStream &, const BULGU &);
+    friend QDataStream &operator>>(QDataStream &, BULGU &);*/
 public:
-    QString aciklama() const;
+    QString &aciklama();
     void setAciklama(const QString &newAciklama);
 
     BulguTipiEnum tip() const;
     void setTip(BulguTipiEnum newTip);
 
-    QDate kaydedilmeZamani() const;
-    void setKaydedilmeZamani(const QDate &newKaydedilmeZamani);
+    QDateTime &kaydedilmeZamani();
+    void setKaydedilmeZamani(const QDateTime &newKaydedilmeZamani);
 
 private:
     QString _aciklama;
     BulguTipiEnum _tip;
-    QDate _kaydedilmeZamani;
+    QDateTime _kaydedilmeZamani;
 };

@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-57a4c6531b16c4fb2285.json",
+					"jsonFile" : "directory-.-Debug-39eb8d65ffd435b48f12.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "saglikocagi::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-saglikocagi-Debug-c4d50e41516c4f592fe9.json",
+					"jsonFile" : "target-saglikocagi-Debug-4ffd983b2b3479cea055.json",
 					"name" : "saglikocagi",
 					"projectIndex" : 0
 				},
