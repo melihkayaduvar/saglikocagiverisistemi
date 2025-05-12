@@ -126,6 +126,7 @@ void VERITABANI::kaydet()
             ts<<tblBulgu._elemanlar[i]->aciklama();
             ts<<tblBulgu._elemanlar[i]->tip();
             ts<<tblBulgu._elemanlar[i]->kaydedilmeZamani();
+            ts<<tblBulgu._elemanlar[i]->ziyaretid();
         }
 
         // Istenen Tetkik
@@ -138,6 +139,8 @@ void VERITABANI::kaydet()
             ts<<tblIstenenTetkik._elemanlar[i]->sonuc();
             ts<<tblIstenenTetkik._elemanlar[i]->yorum();
             ts<<tblIstenenTetkik._elemanlar[i]->durum();
+            ts<<tblIstenenTetkik._elemanlar[i]->ziyaretid();
+            ts<<tblIstenenTetkik._elemanlar[i]->tetkikid();
         }
 
         // Zıyaret
@@ -149,25 +152,8 @@ void VERITABANI::kaydet()
             ts<<tblZiyaret._elemanlar[i]->sikayet();
             ts<<tblZiyaret._elemanlar[i]->tani();
             ts<<tblZiyaret._elemanlar[i]->tedavinotlari();
-
-            /*ts<<tblZiyaret._elemanlar[i]->doktorid();
+            ts<<tblZiyaret._elemanlar[i]->doktorid();
             ts<<tblZiyaret._elemanlar[i]->hastaid();
-            ts<<tblZiyaret._elemanlar[i]->receteid();*/
-
-
-            /*QVector<BULGU*> bulguListesi = tblZiyaret._elemanlar[i]->bulgular();
-            ts << bulguListesi.size();
-            for (BULGU* z : std::as_const(bulguListesi)) {
-                if (z)
-                    ts << *z;
-            }
-            QVector<ISTENENTETKIK*> istenentetkikListesi = tblZiyaret._elemanlar[i]->istenentetkikler();
-            ts << istenentetkikListesi.size();
-            for (ISTENENTETKIK* z : std::as_const(istenentetkikListesi)) {
-                if (z)
-                    ts << *z;
-            }*/
-
         }
         // Receteler
         ts<<tblRecete._sonid;
@@ -176,13 +162,7 @@ void VERITABANI::kaydet()
             ts<<tblRecete._elemanlar[i]->id();
             ts<<tblRecete._elemanlar[i]->tarih();
             ts<<tblRecete._elemanlar[i]->gecerlilikSuresi();
-
-            /*QVector<RECETEKALEMI*> recetekalemiListesi = tblRecete._elemanlar[i]->kalemler();
-            ts << recetekalemiListesi.size();
-            for (RECETEKALEMI* z : std::as_const(recetekalemiListesi)) {
-                if (z)
-                    ts << *z;
-            }*/
+            ts<<tblRecete._elemanlar[i]->ziyaretid();
         }
 
         // Tetkik
@@ -216,8 +196,8 @@ void VERITABANI::kaydet()
             ts<<tblReceteKalemi._elemanlar[i]->doz();
             ts<<tblReceteKalemi._elemanlar[i]->periyot();
             ts<<tblReceteKalemi._elemanlar[i]->adet();
-
-            /*ts<<tblReceteKalemi._elemanlar[i]->ilacid();*/
+            ts<<tblReceteKalemi._elemanlar[i]->receteid();
+            ts<<tblReceteKalemi._elemanlar[i]->ilacid();
         }
 
     }
@@ -247,13 +227,16 @@ void VERITABANI::geriyukle()
             QString doktorTelefon;
             QString doktordiplomano;
             QString doktorUzmanlik;
+
             ts >> doktorId >> doktorAdi >> doktorSoyadi >> doktorTelefon >> doktordiplomano >> doktorUzmanlik;
+
             doktor->setId(doktorId);
             doktor->setadi(doktorAdi);
             doktor->setsoyadi(doktorSoyadi);
             doktor->settelefon(doktorTelefon);
             doktor->setdiplomano(doktordiplomano);
             doktor->setuzmanlikAlani(doktorUzmanlik);
+
             tblDoktor._elemanlar.append(doktor);
         }
 
@@ -272,9 +255,11 @@ void VERITABANI::geriyukle()
             QString hastaKanGrubu;
             QStringList hastaAlerjiler;
             QStringList hastaKronik;
+
             ts >> hastaId>>hastaAdi>>hastaSoyadi>>hastaTel>>hastaDogumTarihi>>
                 hastaCinsiyet>>hastaAdres>>hastaKanGrubu>>hastaAlerjiler>>
                 hastaKronik;
+
             hasta->setId(hastaId);
             hasta->setadi(hastaAdi);
             hasta->setsoyadi(hastaSoyadi);
@@ -285,16 +270,6 @@ void VERITABANI::geriyukle()
             hasta->setKanGrubu(hastaKanGrubu);
             hasta->setAlerjiler(hastaAlerjiler);
             hasta->setKronikHastaliklar(hastaKronik);
-
-            /*quint32 size;
-            ts >> size;
-            QVector<quint32> ziyaretId;
-            for(auto i=0;i<size;i++){
-                quint32 z;
-                ts >> z;
-                ziyaretId.append(z);
-            }*/
-            //hasta->setZiyaretIdleri(ziyaretId);
 
             tblHasta._elemanlar.append(hasta);
         }
@@ -308,11 +283,16 @@ void VERITABANI::geriyukle()
             QString bulguaciklama;
             BulguTipiEnum bulgutipi;
             QDateTime bulgukaydedilmetarihi;
-            ts >> bulguid >> bulguaciklama >> bulgutipi >> bulgukaydedilmetarihi;
+            quint32 ziyaretid;
+
+            ts >> bulguid >> bulguaciklama >> bulgutipi >> bulgukaydedilmetarihi>>ziyaretid;
+
             bulgu->setId(bulguid);
             bulgu->setAciklama(bulguaciklama);
             bulgu->setTip(bulgutipi);
             bulgu->setKaydedilmeZamani(bulgukaydedilmetarihi);
+            bulgu->setZiyaretId(ziyaretid);
+
             tblBulgu._elemanlar.append(bulgu);
         }
 
@@ -327,13 +307,20 @@ void VERITABANI::geriyukle()
             QString sonuc;
             QString yorum;
             TetkikDurumuEnum durum;
-            ts>>id>>istektarihi>>sonuctarihi>>sonuc>>yorum>>durum;
+            quint32 ziyaretid;
+            quint32 tetkikid;
+
+            ts>>id>>istektarihi>>sonuctarihi>>sonuc>>yorum>>durum>>ziyaretid>>tetkikid;
+
             isttetkik->setId(id);
             isttetkik->setIstekTarihi(istektarihi);
             isttetkik->setSonucTarihi(sonuctarihi);
             isttetkik->setSonuc(sonuc);
             isttetkik->setYorum(yorum);
             isttetkik->setDurum(durum);
+            isttetkik->setZiyaretId(ziyaretid);
+            isttetkik->setTetkikId(tetkikid);
+
             tblIstenenTetkik._elemanlar.append(isttetkik);
         }
 
@@ -347,12 +334,19 @@ void VERITABANI::geriyukle()
             QString sikayet;
             QString tani;
             QString tedavinot;
-            ts>>id>>tarihsaat>>sikayet>>tani>>tedavinot;
+            quint32 doktorid;
+            quint32 hastaid;
+
+            ts>>id>>tarihsaat>>sikayet>>tani>>tedavinot>>doktorid>>hastaid;
+
             ziyaret->setId(id);
             ziyaret->setTarihsaat(tarihsaat);
             ziyaret->setSikayet(sikayet);
             ziyaret->setTani(tani);
             ziyaret->setTedavinotlari(tedavinot);
+            ziyaret->setDoktorId(doktorid);
+            ziyaret->setHastaId(hastaid);
+
             tblZiyaret._elemanlar.append(ziyaret);
         }
 
@@ -364,10 +358,15 @@ void VERITABANI::geriyukle()
             quint32 id;
             QDate tarih;
             quint32 gecerliliksuresi;
-            ts>>id>>tarih>>gecerliliksuresi;
+            quint32 ziyaretid;
+
+            ts>>id>>tarih>>gecerliliksuresi>>ziyaretid;
+
             recete->setId(id);
             recete->setTarih(tarih);
             recete->setGecerlilikSuresi(gecerliliksuresi);
+            recete->setZiyaretId(ziyaretid);
+
             tblRecete._elemanlar.append(recete);
         }
 
@@ -380,11 +379,14 @@ void VERITABANI::geriyukle()
             QString ad;
             QString aciklama;
             QString normaldegerler;
+
             ts>>id>>ad>>aciklama>>normaldegerler;
+
             tetkik->setId(id);
             tetkik->setAd(ad);
             tetkik->setAciklama(aciklama);
             tetkik->setNormalDegerler(normaldegerler);
+
             tblTetkik._elemanlar.append(tetkik);
         }
 
@@ -399,13 +401,16 @@ void VERITABANI::geriyukle()
             QString etkenmadde;
             QString form;
             QString dozaj;
+
             ts>>id>>barkod>>ad>>etkenmadde>>form>>dozaj;
+
             ilac->setId(id);
             ilac->setAd(ad);
             ilac->setBarkod(barkod);
             ilac->setEtkenMadde(etkenmadde);
             ilac->setForm(form);
             ilac->setDozajBilgisi(dozaj);
+
             tblIlac._elemanlar.append(ilac);
         }
 
@@ -419,12 +424,19 @@ void VERITABANI::geriyukle()
             QString doz;
             QString periyot;
             quint8 adet;
-            ts>>id>>kullanimsekli>>doz>>periyot>>adet;
+            quint32 receteid;
+            quint32 ilacid;
+
+            ts>>id>>kullanimsekli>>doz>>periyot>>adet>>receteid>>ilacid;
+
             recetekalemi->setId(id);
             recetekalemi->setKullanimSekli(kullanimsekli);
             recetekalemi->setDoz(doz);
             recetekalemi->setPeriyot(periyot);
             recetekalemi->setAdet(adet);
+            recetekalemi->setReceteId(receteid);
+            recetekalemi->setIlacID(ilacid);
+
             tblReceteKalemi._elemanlar.append(recetekalemi);
         }
 

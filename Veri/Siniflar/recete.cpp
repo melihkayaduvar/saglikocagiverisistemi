@@ -1,7 +1,7 @@
 #include "recete.h"
 
-RECETE::RECETE():IdliSinif{},_tarih{},_gecerlilikSuresi{0} {}
-RECETE::RECETE(const RECETE& kaynak):IdliSinif{kaynak},_tarih{kaynak._tarih},_gecerlilikSuresi{kaynak._gecerlilikSuresi} {}
+RECETE::RECETE():IdliSinif{},_tarih{},_gecerlilikSuresi{0},_ziyaretid{} {}
+RECETE::RECETE(const RECETE& kaynak):IdliSinif{kaynak},_tarih{kaynak._tarih},_gecerlilikSuresi{kaynak._gecerlilikSuresi},_ziyaretid{kaynak._ziyaretid} {}
 
 QDate &RECETE::tarih()
 {
@@ -23,12 +23,12 @@ void RECETE::setGecerlilikSuresi(quint32 newGecerlilikSuresi)
     _gecerlilikSuresi = newGecerlilikSuresi;
 }
 
-/*QList<RECETEKALEMI *> RECETE::kalemler() const
+quint32 RECETE::ziyaretid() const
 {
-    return _kalemler;
+    return _ziyaretid;
 }
 
-void RECETE::setKalemler(const QList<RECETEKALEMI *> &newKalemler)
+void RECETE::setZiyaretId(const quint32 &newziyaretid)
 {
-    _kalemler = newKalemler;
-}*/
+    _ziyaretid=newziyaretid;
+}

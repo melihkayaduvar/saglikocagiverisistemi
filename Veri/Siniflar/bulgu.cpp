@@ -1,7 +1,7 @@
 #include "bulgu.h"
 
-BULGU::BULGU():IdliSinif{},_aciklama{""},_tip{},_kaydedilmeZamani{} {}
-BULGU::BULGU(const BULGU& kaynak):IdliSinif{kaynak},_aciklama{kaynak._aciklama},_tip{kaynak._tip},_kaydedilmeZamani{kaynak._kaydedilmeZamani} {}
+BULGU::BULGU():IdliSinif{},_aciklama{""},_tip{},_kaydedilmeZamani{},_ziyaretid{} {}
+BULGU::BULGU(const BULGU& kaynak):IdliSinif{kaynak},_aciklama{kaynak._aciklama},_tip{kaynak._tip},_kaydedilmeZamani{kaynak._kaydedilmeZamani},_ziyaretid{kaynak._ziyaretid} {}
 
 QString &BULGU::aciklama()
 {
@@ -32,6 +32,28 @@ void BULGU::setKaydedilmeZamani(const QDateTime &newKaydedilmeZamani)
 {
     _kaydedilmeZamani = newKaydedilmeZamani;
 }
+
+quint32 BULGU::ziyaretid() const
+{
+    return _ziyaretid;
+}
+
+void BULGU::setZiyaretId(const quint32 &newziyaretid)
+{
+    _ziyaretid=newziyaretid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*QDataStream &operator<<(QDataStream &out, const BULGU &z)

@@ -52,8 +52,12 @@ set(OLD_GLOB
   "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/recetekalemi.cpp"
   "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/tetkik.cpp"
   "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/ziyaret.cpp"
+  "C:/MyCodes/QT/saglikocagiodev/Veri/anapencere.cpp"
   "C:/MyCodes/QT/saglikocagiodev/Veri/veritabani.cpp"
   "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+  "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/UFHY2OPPV4/moc_anapencere.cpp"
+  "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/Y76VNH3VYH/qrc_resource.cpp"
+  "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/mocs_compilation.cpp"
   "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/saglikocagi_autogen/mocs_compilation.cpp"
   "C:/MyCodes/QT/saglikocagiodev/main.cpp"
@@ -89,7 +93,11 @@ set(OLD_GLOB
   "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/recetekalemi.h"
   "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/tetkik.h"
   "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/ziyaret.h"
+  "C:/MyCodes/QT/saglikocagiodev/Veri/anapencere.h"
   "C:/MyCodes/QT/saglikocagiodev/Veri/veritabani.h"
+  "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/include/Veri/ui_anapencere.h"
+  "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/include/ui_anapencere.h"
+  "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/moc_predefs.h"
   "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/saglikocagi_autogen/moc_predefs.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -172,6 +180,7 @@ endif()
 # _directory_contents at C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/MyCodes/QT/saglikocagiodev/*.qrc")
 set(OLD_GLOB
+  "C:/MyCodes/QT/saglikocagiodev/kaynakdosyaları/resource.qrc"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -190,6 +199,7 @@ endif()
 # _directory_contents at C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/MyCodes/QT/saglikocagiodev/*.ui")
 set(OLD_GLOB
+  "C:/MyCodes/QT/saglikocagiodev/Veri/anapencere.ui"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

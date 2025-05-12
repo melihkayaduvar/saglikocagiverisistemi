@@ -1252,6 +1252,9 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake"
+		},
+		{
+			"path" : "kaynakdosyalar\u0131/resource.qrc"
 		}
 	],
 	"kind" : "cmakeFiles",

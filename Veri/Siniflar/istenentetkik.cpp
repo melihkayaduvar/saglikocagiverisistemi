@@ -1,8 +1,8 @@
 #include "istenentetkik.h"
 
-ISTENENTETKIK::ISTENENTETKIK():IdliSinif(),_istekTarihi{},_sonucTarihi{},_sonuc{""},_yorum{""},_durum{} {}
+ISTENENTETKIK::ISTENENTETKIK():IdliSinif(),_istekTarihi{},_sonucTarihi{},_sonuc{""},_yorum{""},_durum{},_ziyaretid{},_tetkikid{} {}
 ISTENENTETKIK::ISTENENTETKIK(const ISTENENTETKIK& kaynak):IdliSinif(kaynak),_istekTarihi{kaynak._istekTarihi}
-    ,_sonucTarihi{kaynak._sonucTarihi},_sonuc{kaynak._sonuc},_yorum{kaynak._yorum},_durum{kaynak._durum} {}
+    ,_sonucTarihi{kaynak._sonucTarihi},_sonuc{kaynak._sonuc},_yorum{kaynak._yorum},_durum{kaynak._durum},_ziyaretid{kaynak._ziyaretid},_tetkikid{kaynak._tetkikid} {}
 
 QDateTime &ISTENENTETKIK::istekTarihi()
 {
@@ -54,26 +54,22 @@ void ISTENENTETKIK::setDurum(TetkikDurumuEnum newDurum)
     _durum = newDurum;
 }
 
-/*QDataStream &operator<<(QDataStream &out, const ISTENENTETKIK &z)
+quint32 ISTENENTETKIK::ziyaretid() const
 {
-    out << z._istekTarihi
-        << z._sonucTarihi
-        << z._sonuc
-        << z._yorum
-        << z._durum;
-
-    return out;
+    return _ziyaretid;
 }
 
-QDataStream &operator>>(QDataStream &in, ISTENENTETKIK &z)
+void ISTENENTETKIK::setZiyaretId(const quint32 &newZiyaretId)
 {
-    in >> z._istekTarihi
-        >> z._sonucTarihi
-        >> z._sonuc
-        >> z._yorum
-        >> z._durum;
+    _ziyaretid=newZiyaretId;
+}
 
+quint32 ISTENENTETKIK::tetkikid() const
+{
+    return _tetkikid;
+}
 
-    return in;
-}*/
-
+void ISTENENTETKIK::setTetkikId(const quint32 &newTetkikId)
+{
+    _tetkikid=newTetkikId;
+}

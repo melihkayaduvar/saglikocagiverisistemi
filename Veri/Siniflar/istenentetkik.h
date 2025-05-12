@@ -9,8 +9,6 @@ private:
     ISTENENTETKIK();
     ISTENENTETKIK(const ISTENENTETKIK& kaynak);
     template <class T> friend class TABLO;
-    /*friend QDataStream &operator<<(QDataStream &, const ISTENENTETKIK &);
-    friend QDataStream &operator>>(QDataStream &, ISTENENTETKIK &);*/
 public:
 
     QDateTime &istekTarihi();
@@ -28,10 +26,22 @@ public:
     TetkikDurumuEnum durum()const;
     void setDurum(TetkikDurumuEnum newDurum);
 
+    quint32 ziyaretid()const;
+    void setZiyaretId(const quint32 &newZiyaretId);
+
+    quint32 tetkikid()const;
+    void setTetkikId(const quint32 &newTetkikId);
+
+
 private:
     QDateTime _istekTarihi;
     QDateTime _sonucTarihi;
     QString _sonuc;
     QString _yorum;
     TetkikDurumuEnum _durum;
+
+
+    //İlişkiler
+    quint32 _ziyaretid;
+    quint32 _tetkikid;
 };

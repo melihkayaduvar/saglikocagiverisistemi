@@ -3,8 +3,6 @@
 #include "insan.h"
 #include "../Araclar/enums.h"
 
-/*class ZIYARET;*/
-
 class HASTA:public Insan{
 private:
     HASTA();
@@ -32,8 +30,6 @@ public:
     CinsiyetEnum cinsiyet() const;
     void setCinsiyet(CinsiyetEnum newCinsiyet);
 
-    /*QVector<quint32> ziyaretIdleri() const;
-    void setZiyaretIdleri(const QVector<quint32>& yeniListe);*/
 
 private:
     QString _tckimlik;
@@ -43,6 +39,4 @@ private:
     QString _kanGrubu;
     QStringList _alerjiler;
     QStringList _kronikHastaliklar;
-
-    //QVector<quint32> _ziyaretIdleri;
 };

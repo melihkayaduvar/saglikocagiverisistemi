@@ -302,7 +302,8 @@
 		"C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake",
 		"C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake",
 		"C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake",
-		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake"
+		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake",
+		"C:/MyCodes/QT/saglikocagiodev/kaynakdosyalar\u0131/resource.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "C:/MyCodes/QT/saglikocagiodev",
 	"CROSS_CONFIG" : false,
@@ -392,6 +393,12 @@
 			"C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/ziyaret.h",
 			"MU",
 			"N6GAHQ7ORN/moc_ziyaret.cpp",
+			null
+		],
+		[
+			"C:/MyCodes/QT/saglikocagiodev/Veri/anapencere.h",
+			"MU",
+			"UFHY2OPPV4/moc_anapencere.cpp",
 			null
 		],
 		[
@@ -494,6 +501,7 @@
 		],
 		[ "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/tetkik.cpp", "MU", null ],
 		[ "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/ziyaret.cpp", "MU", null ],
+		[ "C:/MyCodes/QT/saglikocagiodev/Veri/anapencere.cpp", "MU", null ],
 		[ "C:/MyCodes/QT/saglikocagiodev/Veri/veritabani.cpp", "MU", null ],
 		[ "C:/MyCodes/QT/saglikocagiodev/main.cpp", "MU", null ]
 	],

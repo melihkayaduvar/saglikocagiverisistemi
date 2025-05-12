@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>anapencere</class>
+ <widget class="QMainWindow" name="anapencere">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>784</width>
+    <height>508</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Hastane Teması QSS */
+QMainWindow#anapencere{
+	border-image: url(:/new/background/main-background)
+}
+QWidget {
+    font-family: Arial, sans-serif;
+    color: #333; /* Metin rengi */
+    border-radius: 5px;
+    padding: 10px;
+}
+
+QPushButton {
+    background-color: #4CAF50; /* Yeşil buton */
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+}
+
+QPushButton:hover {
+    background-color: #45a049; /* Hover durumunda daha koyu yeşil */
+}
+
+QPushButton:pressed {
+    background-color: #388e3c; /* Tıklanma sonrası yeşil */
+}
+
+QLineEdit {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border-color: #4CAF50; /* Odaklandığında yeşil sınır */
+}
+
+QLabel {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+QComboBox {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+QComboBox:hover {
+    border-color: #4CAF50; /* Hoverda yeşil sınır */
+}
+
+QTabWidget {
+    background-color: rgba(0, 0, 0, 0); /* Şeffaf arka plan */
+    border: none;
+}
+
+QTabWidget::pane {
+    background-color: transparent;
+    border: none;
+}
+/* Sekme çubuğu */
+QTabBar::tab {
+	background-color: rgba(43, 76, 147,0.2);
+    color: white;
+    font-family: &quot;Arial Black&quot;;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+/* Seçili sekme */
+QTabBar::tab:selected {
+    background-color: rgba(43, 76, 147,0.6);
+    color: white;
+    border: 1px solid rgb(43, 76, 147);
+}
+
+/* Hover (fareyle üzerine gelindiğinde) */
+QTabBar::tab:hover {
+    background-color: rgba(29, 132, 132,0.6);
+    color: white;
+    border: 1px solid rgba(29, 132, 132,0.6);
+}
+
+QScrollBar:horizontal, QScrollBar:vertical {
+    background: #f0f8ff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 8px;
+    width: 8px;
+}
+
+QScrollBar::handle:horizontal, QScrollBar::handle:vertical {
+    background: #4CAF50;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:horizontal:hover, QScrollBar::handle:vertical:hover {
+    background: #388e3c;
+}
+/* Menü çubuğu arka plan rengi ve sınırları */
+QMenuBar {
+    background-color:rgba(0, 0, 0, 0.2); 
+    color: white; /* Yazı rengi beyaz */
+	font-family: &quot;Arial Black&quot;;
+    font-size: 10px; /* Font boyutu */
+    font-weight: bold;
+    border: 1px; /* Kenarlık yok */
+    padding: 2px;
+}
+
+/* Menü öğeleri */
+QMenuBar::item {
+    background-color: transparent; /* Arka planı şeffaf */
+    color: white; /* Yazı rengi beyaz */
+    padding: 8px 15px; /* İç boşluk */
+}
+
+/* Menü öğeleri üzerine gelindiğinde renk değişimi */
+QMenuBar::item:selected {
+    background-color: rgba(43, 76, 147,0.6);
+    color: white;
+}
+
+/* Menü öğeleri üzerine gelindiğinde fareyle etkileşim */
+QMenuBar::item:hover {
+    background-color: rgba(29, 132, 132,0.6);
+    color: white;
+    border: 1px solid rgba(29, 132, 132,0.6);
+}
+
+/* Menü arka planı */
+QMenu {
+    background-color:rgba(21, 24, 62, 0.4);  /* Koyu gri arka plan */
+    border: 1px solid #555; /* Gri kenarlık */
+    color: white; /* Menü öğesi yazı rengi beyaz */
+    padding: 5px;
+}
+
+/* Menü öğelerinin üzerine gelindiğinde değişiklik */
+QMenu::item {
+    padding: 8px 15px; /* Menü öğesi iç boşluğu */
+    background-color: transparent; /* Arka planı şeffaf */
+}
+
+QMenu::item:selected {
+    background-color: rgba(43, 76, 147,0.6);
+    color: white;
+}
+
+/* Menü öğeleri üzerine gelindiğinde */
+QMenu::item:hover {
+    background-color: rgba(29, 132, 132,0.6);
+    color: white;
+    border: 1px solid rgba(29, 132, 132,0.6);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>130</y>
+      <width>341</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <italic>false</italic>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferAntialias</stylestrategy>
+      <kerning>true</kerning>
+      <fontweight>ExtraBold</fontweight>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::TabPosition::West</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::TabShape::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <bold>false</bold>
+      </font>
+     </property>
+     <attribute name="title">
+      <string>Doktor</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="Buttonnewdok">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>-1</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Yeni Doktor</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="Buttondoktorlist">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>-1</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Doktorlar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Hasta</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="Buttonnewhasta">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>-1</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Yeni Hasta</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="Buttonhastalist">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>-1</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Hastalar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Ziyaret</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="Buttonnewziyaret">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>-1</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Yeni Ziyaret</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="Buttonziyaretlist">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>-1</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Ziyaretler</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>İlaç</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="Buttonnewilac">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>-1</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Yeni İlaç</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="Buttonilaclist">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>-1</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>İlaçlar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>784</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDoktor">
+    <property name="title">
+     <string>Doktor</string>
+    </property>
+    <addaction name="actionEkle"/>
+    <addaction name="actionDoktorlar"/>
+   </widget>
+   <widget class="QMenu" name="menuHasta">
+    <property name="title">
+     <string>Hasta</string>
+    </property>
+    <addaction name="actionHasta_Ekle"/>
+    <addaction name="actionHastalar"/>
+   </widget>
+   <widget class="QMenu" name="menuZiyaret">
+    <property name="title">
+     <string>Ziyaret</string>
+    </property>
+    <addaction name="actionYeni_Ziyaret"/>
+    <addaction name="actionZiyaretler"/>
+   </widget>
+   <widget class="QMenu" name="menu_la">
+    <property name="title">
+     <string>İlaç</string>
+    </property>
+    <addaction name="actionYeni_lac"/>
+    <addaction name="action_la_lar"/>
+   </widget>
+   <addaction name="menuDoktor"/>
+   <addaction name="menuHasta"/>
+   <addaction name="menuZiyaret"/>
+   <addaction name="menu_la"/>
+  </widget>
+  <action name="actionEkle">
+   <property name="text">
+    <string>Yeni Doktor</string>
+   </property>
+  </action>
+  <action name="actionDoktorlar">
+   <property name="text">
+    <string>Doktorlar</string>
+   </property>
+  </action>
+  <action name="actionHasta_Ekle">
+   <property name="text">
+    <string>Yeni Hasta</string>
+   </property>
+  </action>
+  <action name="actionHastalar">
+   <property name="text">
+    <string>Hastalar</string>
+   </property>
+  </action>
+  <action name="actionZiyaretler">
+   <property name="text">
+    <string>Ziyaretler</string>
+   </property>
+  </action>
+  <action name="actionYeni_Ziyaret">
+   <property name="text">
+    <string>Yeni Ziyaret</string>
+   </property>
+  </action>
+  <action name="actionYeni_lac">
+   <property name="text">
+    <string>Yeni İlaç</string>
+   </property>
+  </action>
+  <action name="action_la_lar">
+   <property name="text">
+    <string>İlaçlar</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

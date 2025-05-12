@@ -1,0 +1,25 @@
+{
+	"BUILD_DIR" : "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen",
+	"CMAKE_BINARY_DIR" : "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/MyCodes/QT/saglikocagiodev",
+	"CMAKE_SOURCE_DIR" : "C:/MyCodes/QT/saglikocagiodev",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/include",
+	"INPUTS" : 
+	[
+		"C:/MyCodes/QT/saglikocagiodev/kaynakdosyalar\u0131/hopitalbackground.png"
+	],
+	"LOCK_FILE" : "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/CMakeFiles/saglikocagi_autogen.dir/AutoRcc_resource_Y76VNH3VYH_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "resource" ],
+	"OUTPUT_CHECKSUM" : "Y76VNH3VYH",
+	"OUTPUT_NAME" : "qrc_resource.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt/6.8.2/mingw_64/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/CMakeFiles/saglikocagi_autogen.dir/AutoRcc_resource_Y76VNH3VYH_Used.txt",
+	"SOURCE" : "C:/MyCodes/QT/saglikocagiodev/kaynakdosyalar\u0131/resource.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

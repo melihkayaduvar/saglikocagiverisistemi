@@ -2,18 +2,13 @@
 
 #include "idlisinif.h"
 
-/*class BULGU;
-class ISTENENTETKIK;*/
-
 class ZIYARET:public IdliSinif{
 public:
     ZIYARET();
     ZIYARET(const ZIYARET& kaynak);
     template <class T> friend class TABLO;
-    /*friend QDataStream &operator<<(QDataStream &, const ZIYARET &);
-    friend QDataStream &operator>>(QDataStream &, ZIYARET &);*/
-public:
 
+public:
     QDateTime &tarihsaat() ;
     void setTarihsaat(const QDateTime &newTarihsaat);
 
@@ -26,18 +21,14 @@ public:
     QString &tedavinotlari() ;
     void setTedavinotlari(const QString &newTedavinotlari);
 
-    /*quint32 doktorid() const;
-    void setDoktorid(quint32 newDoktorid);
+    quint32 doktorid() const;
+    void setDoktorId(const quint32 newDoktorid);
+
     quint32 hastaid() const;
-    void setHastaid(quint32 newHastaid);
-    quint32 receteid() const;
-    void setReceteid(quint32 newReceteid);*/
+    void setHastaId(const quint32 newhastaid);
 
 
-    /*QList<BULGU *> bulgular() const;
-    void setBulgular(const QList<BULGU *> &newBulgular);
-    QList<ISTENENTETKIK *> istenentetkikler() const;
-    void setIstenentetkikler(const QList<ISTENENTETKIK *> &newIstenentetkikler);*/
+
 
 
 private:
@@ -46,12 +37,9 @@ private:
     QString _tani;
     QString _tedavinotlari;
 
-    /*quint32 _doktorid;
+
+    //İlişkiler
+    quint32 _doktorid;
     quint32 _hastaid;
-    quint32 _receteid;*/
-
-
-    /*QVector<BULGU*> _bulgular;
-    QVector<ISTENENTETKIK*> _istenentetkikler;*/
 
 };

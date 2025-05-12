@@ -18,12 +18,15 @@ public:
     quint32 gecerlilikSuresi() const;
     void setGecerlilikSuresi(quint32 newGecerlilikSuresi);
 
-    /*QList<RECETEKALEMI *> kalemler() const;
-    void setKalemler(const QList<RECETEKALEMI *> &newKalemler);*/
+    quint32 ziyaretid() const;
+    void setZiyaretId(const quint32 &newziyaretid);
+
 
 private:
     QDate _tarih;
     quint32 _gecerlilikSuresi;
 
-    /*QVector<RECETEKALEMI*> _kalemler;*/
+    //İlişkiler
+    quint32 _ziyaretid;
+
 };

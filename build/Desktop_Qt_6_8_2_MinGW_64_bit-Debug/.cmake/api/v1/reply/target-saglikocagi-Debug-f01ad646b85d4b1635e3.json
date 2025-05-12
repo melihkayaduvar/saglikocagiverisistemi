@@ -44,19 +44,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 19,
+				"line" : 22,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 34,
+				"line" : 39,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 25,
+				"line" : 30,
 				"parent" : 0
 			},
 			{
@@ -98,7 +98,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 24,
+				"line" : 29,
 				"parent" : 0
 			},
 			{
@@ -286,18 +286,20 @@
 				22,
 				24,
 				26,
-				28
+				28,
+				30,
+				36
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "saglikocagi_autogen::@6890427a1f51a3e7e1df"
+			"id" : "saglikocagi_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "saglikocagi_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "saglikocagi_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "saglikocagi::@6890427a1f51a3e7e1df",
@@ -405,7 +407,9 @@
 				22,
 				24,
 				26,
-				28
+				28,
+				30,
+				36
 			]
 		},
 		{
@@ -413,7 +417,7 @@
 			"sourceIndexes" : 
 			[
 				2,
-				30
+				35
 			]
 		},
 		{
@@ -434,14 +438,31 @@
 				23,
 				25,
 				27,
-				29
+				29,
+				31,
+				34
+			]
+		},
+		{
+			"name" : "Forms",
+			"sourceIndexes" : 
+			[
+				32
+			]
+		},
+		{
+			"name" : "Resources",
+			"sourceIndexes" : 
+			[
+				33
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				31
+				37,
+				38
 			]
 		}
 	],
@@ -604,12 +625,39 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "Veri/anapencere.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Veri/anapencere.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "Veri/veritabani.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"path" : "Veri/veritabani.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Veri/anapencere.ui",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "kaynakdosyalar\u0131/resource.qrc",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/include/Veri/ui_anapencere.h",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -620,9 +668,22 @@
 		},
 		{
 			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/Y76VNH3VYH/qrc_resource.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/timestamp.rule",
-			"sourceGroupIndex" : 3
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/Y76VNH3VYH/qrc_resource.cpp.rule",
+			"sourceGroupIndex" : 5
 		}
 	],
 	"type" : "EXECUTABLE"
