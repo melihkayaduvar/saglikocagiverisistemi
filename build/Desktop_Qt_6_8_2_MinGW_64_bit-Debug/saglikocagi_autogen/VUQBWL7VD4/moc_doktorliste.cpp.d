@@ -1,4 +1,4 @@
-C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/UFHY2OPPV4/moc_anapencere.cpp: C:/MyCodes/QT/saglikocagiodev/Veri/anapencere.h \
+C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/VUQBWL7VD4/moc_doktorliste.cpp: C:/MyCodes/QT/saglikocagiodev/Ui/veri-liste/doktorliste.h \
   C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/moc_predefs.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/q20iterator.h \
@@ -145,10 +145,9 @@ C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikoc
   C:/Qt/6.8.2/mingw_64/include/QtGui/qtransform.h \
   C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs_win.h \
-  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QMainWindow \
-  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qmainwindow.h \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/QDialog \
+  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qdialog.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qsizepolicy.h \
-  C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \

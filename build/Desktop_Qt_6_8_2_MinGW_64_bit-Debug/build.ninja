@@ -81,6 +81,30 @@ build CMakeFiles/saglikocagi.dir/Ui/veri-giris/doktorekle.cpp.obj: CXX_COMPILER_
   OBJECT_DIR = CMakeFiles\saglikocagi.dir
   OBJECT_FILE_DIR = CMakeFiles\saglikocagi.dir\Ui\veri-giris
 
+build CMakeFiles/saglikocagi.dir/Ui/veri-giris/hastaekle.cpp.obj: CXX_COMPILER__saglikocagi_unscanned_Debug C$:/MyCodes/QT/saglikocagiodev/Ui/veri-giris/hastaekle.cpp || cmake_object_order_depends_target_saglikocagi
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\saglikocagi.dir\Ui\veri-giris\hastaekle.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/include -isystem C:/Qt/6.8.2/mingw_64/include/QtCore -isystem C:/Qt/6.8.2/mingw_64/include -isystem C:/Qt/6.8.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.2/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\saglikocagi.dir
+  OBJECT_FILE_DIR = CMakeFiles\saglikocagi.dir\Ui\veri-giris
+
+build CMakeFiles/saglikocagi.dir/Ui/veri-liste/doktorliste.cpp.obj: CXX_COMPILER__saglikocagi_unscanned_Debug C$:/MyCodes/QT/saglikocagiodev/Ui/veri-liste/doktorliste.cpp || cmake_object_order_depends_target_saglikocagi
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\saglikocagi.dir\Ui\veri-liste\doktorliste.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/include -isystem C:/Qt/6.8.2/mingw_64/include/QtCore -isystem C:/Qt/6.8.2/mingw_64/include -isystem C:/Qt/6.8.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.2/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\saglikocagi.dir
+  OBJECT_FILE_DIR = CMakeFiles\saglikocagi.dir\Ui\veri-liste
+
+build CMakeFiles/saglikocagi.dir/Ui/veri-liste/hastaliste.cpp.obj: CXX_COMPILER__saglikocagi_unscanned_Debug C$:/MyCodes/QT/saglikocagiodev/Ui/veri-liste/hastaliste.cpp || cmake_object_order_depends_target_saglikocagi
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\saglikocagi.dir\Ui\veri-liste\hastaliste.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/include -isystem C:/Qt/6.8.2/mingw_64/include/QtCore -isystem C:/Qt/6.8.2/mingw_64/include -isystem C:/Qt/6.8.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.2/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\saglikocagi.dir
+  OBJECT_FILE_DIR = CMakeFiles\saglikocagi.dir\Ui\veri-liste
+
 build CMakeFiles/saglikocagi.dir/Veri/Siniflar/bulgu.cpp.obj: CXX_COMPILER__saglikocagi_unscanned_Debug C$:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/bulgu.cpp || cmake_object_order_depends_target_saglikocagi
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\saglikocagi.dir\Veri\Siniflar\bulgu.cpp.obj.d
@@ -193,7 +217,7 @@ build CMakeFiles/saglikocagi.dir/saglikocagi_autogen/Y76VNH3VYH/qrc_resource.cpp
 #############################################
 # Link the executable saglikocagi.exe
 
-build saglikocagi.exe: CXX_EXECUTABLE_LINKER__saglikocagi_Debug CMakeFiles/saglikocagi.dir/saglikocagi_autogen/mocs_compilation.cpp.obj CMakeFiles/saglikocagi.dir/main.cpp.obj CMakeFiles/saglikocagi.dir/Ui/anapencere.cpp.obj CMakeFiles/saglikocagi.dir/Ui/veri-giris/doktorekle.cpp.obj CMakeFiles/saglikocagi.dir/Veri/Siniflar/bulgu.cpp.obj CMakeFiles/saglikocagi.dir/Veri/Siniflar/doktor.cpp.obj CMakeFiles/saglikocagi.dir/Veri/Siniflar/hasta.cpp.obj CMakeFiles/saglikocagi.dir/Veri/Siniflar/idlisinif.cpp.obj CMakeFiles/saglikocagi.dir/Veri/Siniflar/ilac.cpp.obj CMakeFiles/saglikocagi.dir/Veri/Siniflar/insan.cpp.obj CMakeFiles/saglikocagi.dir/Veri/Siniflar/istenentetkik.cpp.obj CMakeFiles/saglikocagi.dir/Veri/Siniflar/recete.cpp.obj CMakeFiles/saglikocagi.dir/Veri/Siniflar/recetekalemi.cpp.obj CMakeFiles/saglikocagi.dir/Veri/Siniflar/tetkik.cpp.obj CMakeFiles/saglikocagi.dir/Veri/Siniflar/ziyaret.cpp.obj CMakeFiles/saglikocagi.dir/Veri/veritabani.cpp.obj CMakeFiles/saglikocagi.dir/saglikocagi_autogen/Y76VNH3VYH/qrc_resource.cpp.obj | C$:/Qt/6.8.2/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.8.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.8.2/mingw_64/lib/libQt6Core.a || saglikocagi_autogen saglikocagi_autogen_timestamp_deps
+build saglikocagi.exe: CXX_EXECUTABLE_LINKER__saglikocagi_Debug CMakeFiles/saglikocagi.dir/saglikocagi_autogen/mocs_compilation.cpp.obj CMakeFiles/saglikocagi.dir/main.cpp.obj CMakeFiles/saglikocagi.dir/Ui/anapencere.cpp.obj CMakeFiles/saglikocagi.dir/Ui/veri-giris/doktorekle.cpp.obj CMakeFiles/saglikocagi.dir/Ui/veri-giris/hastaekle.cpp.obj CMakeFiles/saglikocagi.dir/Ui/veri-liste/doktorliste.cpp.obj CMakeFiles/saglikocagi.dir/Ui/veri-liste/hastaliste.cpp.obj CMakeFiles/saglikocagi.dir/Veri/Siniflar/bulgu.cpp.obj CMakeFiles/saglikocagi.dir/Veri/Siniflar/doktor.cpp.obj CMakeFiles/saglikocagi.dir/Veri/Siniflar/hasta.cpp.obj CMakeFiles/saglikocagi.dir/Veri/Siniflar/idlisinif.cpp.obj CMakeFiles/saglikocagi.dir/Veri/Siniflar/ilac.cpp.obj CMakeFiles/saglikocagi.dir/Veri/Siniflar/insan.cpp.obj CMakeFiles/saglikocagi.dir/Veri/Siniflar/istenentetkik.cpp.obj CMakeFiles/saglikocagi.dir/Veri/Siniflar/recete.cpp.obj CMakeFiles/saglikocagi.dir/Veri/Siniflar/recetekalemi.cpp.obj CMakeFiles/saglikocagi.dir/Veri/Siniflar/tetkik.cpp.obj CMakeFiles/saglikocagi.dir/Veri/Siniflar/ziyaret.cpp.obj CMakeFiles/saglikocagi.dir/Veri/veritabani.cpp.obj CMakeFiles/saglikocagi.dir/saglikocagi_autogen/Y76VNH3VYH/qrc_resource.cpp.obj | C$:/Qt/6.8.2/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.8.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.8.2/mingw_64/lib/libQt6Core.a || saglikocagi_autogen saglikocagi_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_LIBRARIES = C:/Qt/6.8.2/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.8.2/mingw_64/lib/libQt6Gui.a  C:/Qt/6.8.2/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\saglikocagi.dir
@@ -279,7 +303,7 @@ build saglikocagi_autogen_timestamp_deps: phony
 #############################################
 # Utility command for saglikocagi_autogen
 
-build saglikocagi_autogen: phony CMakeFiles/saglikocagi_autogen saglikocagi_autogen/include/Ui/ui_anapencere.h saglikocagi_autogen/include/Ui/veri-giris/ui_doktorekle.h saglikocagi_autogen/timestamp saglikocagi_autogen/mocs_compilation.cpp saglikocagi_autogen_timestamp_deps
+build saglikocagi_autogen: phony CMakeFiles/saglikocagi_autogen saglikocagi_autogen/include/Ui/ui_anapencere.h saglikocagi_autogen/include/Ui/veri-giris/ui_doktorekle.h saglikocagi_autogen/include/Ui/veri-giris/ui_hastaekle.h saglikocagi_autogen/include/Ui/veri-liste/ui_doktorliste.h saglikocagi_autogen/include/Ui/veri-liste/ui_hastaliste.h saglikocagi_autogen/timestamp saglikocagi_autogen/mocs_compilation.cpp saglikocagi_autogen_timestamp_deps
 
 
 #############################################
@@ -305,7 +329,7 @@ build saglikocagi_autogen/Y76VNH3VYH/qrc_resource.cpp | ${cmake_ninja_workdir}sa
 #############################################
 # Phony custom command for CMakeFiles\saglikocagi_autogen
 
-build CMakeFiles/saglikocagi_autogen saglikocagi_autogen/include/Ui/ui_anapencere.h saglikocagi_autogen/include/Ui/veri-giris/ui_doktorekle.h | ${cmake_ninja_workdir}CMakeFiles/saglikocagi_autogen ${cmake_ninja_workdir}saglikocagi_autogen/include/Ui/ui_anapencere.h ${cmake_ninja_workdir}saglikocagi_autogen/include/Ui/veri-giris/ui_doktorekle.h: phony saglikocagi_autogen/timestamp || saglikocagi_autogen_timestamp_deps
+build CMakeFiles/saglikocagi_autogen saglikocagi_autogen/include/Ui/ui_anapencere.h saglikocagi_autogen/include/Ui/veri-giris/ui_doktorekle.h saglikocagi_autogen/include/Ui/veri-giris/ui_hastaekle.h saglikocagi_autogen/include/Ui/veri-liste/ui_doktorliste.h saglikocagi_autogen/include/Ui/veri-liste/ui_hastaliste.h | ${cmake_ninja_workdir}CMakeFiles/saglikocagi_autogen ${cmake_ninja_workdir}saglikocagi_autogen/include/Ui/ui_anapencere.h ${cmake_ninja_workdir}saglikocagi_autogen/include/Ui/veri-giris/ui_doktorekle.h ${cmake_ninja_workdir}saglikocagi_autogen/include/Ui/veri-giris/ui_hastaekle.h ${cmake_ninja_workdir}saglikocagi_autogen/include/Ui/veri-liste/ui_doktorliste.h ${cmake_ninja_workdir}saglikocagi_autogen/include/Ui/veri-liste/ui_hastaliste.h: phony saglikocagi_autogen/timestamp || saglikocagi_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

@@ -3,6 +3,9 @@
 #include "veri-giris/doktorekle.h"
 
 #include "../Veri/veritabani.h"
+#include "veri-giris/hastaekle.h"
+#include "veri-liste/doktorliste.h"
+#include "veri-liste/hastaliste.h"
 
 #include <QMessageBox>
 #include <QCloseEvent>
@@ -48,5 +51,48 @@ void anapencere::on_actiondoktorekle_triggered()
                                  tr("Bilgilendirme"),
                                  tr("%1 %2 adlı doktor eklendi.").arg(doktor->adi(), doktor->soyadi()));
     }
+}
+
+
+void anapencere::on_actiondoktorlist_triggered()
+{
+    DoktorListe doktorlistefrm;
+    doktorlistefrm.exec();
+}
+
+
+void anapencere::on_actionhastaekle_triggered()
+{
+    HastaEkle hastaekleform;
+    auto hasta = VERITABANI::vt().hastalar().olustur();
+    hastaekleform.setVeri(hasta);
+
+    auto cevap = hastaekleform.exec();
+    if(cevap==QDialog::Accepted){
+        hasta=hastaekleform.getVeri();
+        VERITABANI::vt().hastalar().ekle(hasta);
+        QMessageBox::information(this,
+                                 tr("Bilgilendirme"),
+                                 tr("%1 %2 adlı hasta eklendi.").arg(hasta->adi(), hasta->soyadi()));
+    }
+}
+
+
+void anapencere::on_actionhastalist_triggered()
+{
+    HastaListe hastalistefrm;
+    hastalistefrm.exec();
+}
+
+
+void anapencere::on_actionziyaretekle_triggered()
+{
+
+}
+
+
+void anapencere::on_actionziyaretlist_triggered()
+{
+
 }
 

@@ -20,6 +20,16 @@ private slots:
 
     void on_actiondoktorekle_triggered();
 
+    void on_actiondoktorlist_triggered();
+
+    void on_actionhastaekle_triggered();
+
+    void on_actionhastalist_triggered();
+
+    void on_actionziyaretekle_triggered();
+
+    void on_actionziyaretlist_triggered();
+
 private:
     Ui::anapencere *ui;
 

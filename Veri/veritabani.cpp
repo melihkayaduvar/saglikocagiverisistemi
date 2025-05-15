@@ -106,6 +106,7 @@ void VERITABANI::kaydet()
             ts <<tblHasta._elemanlar[i]->id();
             ts <<tblHasta._elemanlar[i]->adi();
             ts <<tblHasta._elemanlar[i]->soyadi();
+            ts <<tblHasta._elemanlar[i]->tckimlik();
             ts <<tblHasta._elemanlar[i]->telefon();
             ts <<tblHasta._elemanlar[i]->dogumTarihi();
             ts <<tblHasta._elemanlar[i]->cinsiyet();
@@ -254,6 +255,7 @@ void VERITABANI::geriyukle()
             quint32 hastaId;
             QString hastaAdi;
             QString hastaSoyadi;
+            QString hastatckimlik;
             QString hastaTel;
             QDate hastaDogumTarihi;
             CinsiyetEnum hastaCinsiyet;
@@ -262,13 +264,14 @@ void VERITABANI::geriyukle()
             QStringList hastaAlerjiler;
             QStringList hastaKronik;
 
-            ts >> hastaId>>hastaAdi>>hastaSoyadi>>hastaTel>>hastaDogumTarihi>>
+            ts >> hastaId>>hastaAdi>>hastaSoyadi>>hastatckimlik>>hastaTel>>hastaDogumTarihi>>
                 hastaCinsiyet>>hastaAdres>>hastaKanGrubu>>hastaAlerjiler>>
                 hastaKronik;
 
             hasta->setId(hastaId);
             hasta->setadi(hastaAdi);
             hasta->setsoyadi(hastaSoyadi);
+            hasta->setTckimlik(hastatckimlik);
             hasta->settelefon(hastaTel);
             hasta->setDogumTarihi(hastaDogumTarihi);
             hasta->setCinsiyet(hastaCinsiyet);

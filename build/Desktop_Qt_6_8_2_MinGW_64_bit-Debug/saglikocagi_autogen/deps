@@ -4,6 +4,12 @@ saglikocagi_autogen/timestamp: \
 	C:/MyCodes/QT/saglikocagiodev/Ui/anapencere.h \
 	C:/MyCodes/QT/saglikocagiodev/Ui/veri-giris/doktorekle.cpp \
 	C:/MyCodes/QT/saglikocagiodev/Ui/veri-giris/doktorekle.h \
+	C:/MyCodes/QT/saglikocagiodev/Ui/veri-giris/hastaekle.cpp \
+	C:/MyCodes/QT/saglikocagiodev/Ui/veri-giris/hastaekle.h \
+	C:/MyCodes/QT/saglikocagiodev/Ui/veri-liste/doktorliste.cpp \
+	C:/MyCodes/QT/saglikocagiodev/Ui/veri-liste/doktorliste.h \
+	C:/MyCodes/QT/saglikocagiodev/Ui/veri-liste/hastaliste.cpp \
+	C:/MyCodes/QT/saglikocagiodev/Ui/veri-liste/hastaliste.h \
 	C:/MyCodes/QT/saglikocagiodev/Veri/Araclar/TABLO.h \
 	C:/MyCodes/QT/saglikocagiodev/Veri/Araclar/TABLO_TANIMLARI.h \
 	C:/MyCodes/QT/saglikocagiodev/Veri/Araclar/enums.h \
@@ -595,4 +601,7 @@ saglikocagi_autogen/timestamp: \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
 	C:/MyCodes/QT/saglikocagiodev/Ui/anapencere.ui \
 	C:/MyCodes/QT/saglikocagiodev/Ui/veri-giris/doktorekle.ui \
+	C:/MyCodes/QT/saglikocagiodev/Ui/veri-giris/hastaekle.ui \
+	C:/MyCodes/QT/saglikocagiodev/Ui/veri-liste/doktorliste.ui \
+	C:/MyCodes/QT/saglikocagiodev/Ui/veri-liste/hastaliste.ui \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

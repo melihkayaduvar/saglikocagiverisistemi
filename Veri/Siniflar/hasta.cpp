@@ -1,7 +1,7 @@
 #include "hasta.h"
 
 HASTA::HASTA():Insan(),_tckimlik{""},_dogumTarihi{},
-    _adres{""},_kanGrubu{""},_alerjiler{""},_kronikHastaliklar{""},_cinsiyet{} {}
+    _adres{""},_kanGrubu{""},_alerjiler{""},_kronikHastaliklar{""},_cinsiyet{CinsiyetEnum::BELIRTILMEMIS} {}
 HASTA::HASTA(const HASTA& kaynak):Insan(kaynak),_tckimlik{kaynak._tckimlik},_dogumTarihi{kaynak._dogumTarihi},
     _adres{kaynak._adres},_kanGrubu{kaynak._kanGrubu},_alerjiler{kaynak._alerjiler},_kronikHastaliklar{kaynak._kronikHastaliklar},_cinsiyet{kaynak._cinsiyet} {}
 

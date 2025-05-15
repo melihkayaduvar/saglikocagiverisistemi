@@ -324,6 +324,24 @@
 			null
 		],
 		[
+			"C:/MyCodes/QT/saglikocagiodev/Ui/veri-giris/hastaekle.h",
+			"MU",
+			"JNG6WA7QYF/moc_hastaekle.cpp",
+			null
+		],
+		[
+			"C:/MyCodes/QT/saglikocagiodev/Ui/veri-liste/doktorliste.h",
+			"MU",
+			"VUQBWL7VD4/moc_doktorliste.cpp",
+			null
+		],
+		[
+			"C:/MyCodes/QT/saglikocagiodev/Ui/veri-liste/hastaliste.h",
+			"MU",
+			"VUQBWL7VD4/moc_hastaliste.cpp",
+			null
+		],
+		[
 			"C:/MyCodes/QT/saglikocagiodev/Veri/Araclar/TABLO.h",
 			"MU",
 			"UNXDI5R6V6/moc_TABLO.cpp",
@@ -487,6 +505,21 @@
 		[ "C:/MyCodes/QT/saglikocagiodev/Ui/anapencere.cpp", "MU", null ],
 		[
 			"C:/MyCodes/QT/saglikocagiodev/Ui/veri-giris/doktorekle.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/MyCodes/QT/saglikocagiodev/Ui/veri-giris/hastaekle.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/MyCodes/QT/saglikocagiodev/Ui/veri-liste/doktorliste.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/MyCodes/QT/saglikocagiodev/Ui/veri-liste/hastaliste.cpp",
 			"MU",
 			null
 		],

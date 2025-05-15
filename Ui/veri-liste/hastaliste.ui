@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HastaListe</class>
+ <widget class="QDialog" name="HastaListe">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1120</width>
+    <height>767</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1300</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTableWidget" name="tableWidget">
+     <column>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ADI</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>SOYADI</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>CINSIYET</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>DOGUM TARIHI</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>TC KIMLIK</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>TELEFON</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ADRES</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>KAN GRUBU</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ALERJILER</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>KRONIK HASTALIKLAR</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

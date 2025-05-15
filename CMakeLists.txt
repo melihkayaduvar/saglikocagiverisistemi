@@ -15,9 +15,9 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core LinguistTools Widget
 set(TS_FILES saglikocagi_tr_TR.ts)
 
 # .ui dosyasını belirtin (Qt Designer ile oluşturulan dosya)
-file(GLOB UI_FILES "Ui/*.ui" "Ui/veri-giris/*.ui")  # ui dosyalarını projenize dahil edin
+file(GLOB UI_FILES "Ui/*.ui" "Ui/veri-giris/*.ui" "Ui/veri-liste/*.ui")  # ui dosyalarını projenize dahil edin
 
-file(GLOB SINIFLAR_SRC "Ui/veri-giris/*.cpp" "Ui/veri-giris/*.h" "Ui/*.cpp" "Ui/*.h" "Veri/Siniflar/*.cpp" "Veri/Siniflar/*.h" "Veri/Araclar/*.h" "Veri/*.cpp" "Veri/*.h")
+file(GLOB SINIFLAR_SRC "Ui/veri-liste/*.cpp" "Ui/veri-liste/*.h" "Ui/veri-giris/*.cpp" "Ui/veri-giris/*.h" "Ui/*.cpp" "Ui/*.h" "Veri/Siniflar/*.cpp" "Veri/Siniflar/*.h" "Veri/Araclar/*.h" "Veri/*.cpp" "Veri/*.h")
 
 add_executable(saglikocagi
   main.cpp
