@@ -1,5 +1,5 @@
 #include "doktorekle.h"
-#include "Ui/veri-giris/ui_doktorekle.h"
+#include "ui/veri-giris/ui_doktorekle.h"
 
 doktorekle::doktorekle(QWidget *parent)
     : QDialog(parent)

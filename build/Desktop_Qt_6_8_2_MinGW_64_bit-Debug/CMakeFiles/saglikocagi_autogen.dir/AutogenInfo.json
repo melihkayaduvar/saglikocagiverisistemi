@@ -312,36 +312,6 @@
 	"HEADERS" : 
 	[
 		[
-			"C:/MyCodes/QT/saglikocagiodev/Ui/anapencere.h",
-			"MU",
-			"5OUZVNNGVJ/moc_anapencere.cpp",
-			null
-		],
-		[
-			"C:/MyCodes/QT/saglikocagiodev/Ui/veri-giris/doktorekle.h",
-			"MU",
-			"JNG6WA7QYF/moc_doktorekle.cpp",
-			null
-		],
-		[
-			"C:/MyCodes/QT/saglikocagiodev/Ui/veri-giris/hastaekle.h",
-			"MU",
-			"JNG6WA7QYF/moc_hastaekle.cpp",
-			null
-		],
-		[
-			"C:/MyCodes/QT/saglikocagiodev/Ui/veri-liste/doktorliste.h",
-			"MU",
-			"VUQBWL7VD4/moc_doktorliste.cpp",
-			null
-		],
-		[
-			"C:/MyCodes/QT/saglikocagiodev/Ui/veri-liste/hastaliste.h",
-			"MU",
-			"VUQBWL7VD4/moc_hastaliste.cpp",
-			null
-		],
-		[
 			"C:/MyCodes/QT/saglikocagiodev/Veri/Araclar/TABLO.h",
 			"MU",
 			"UNXDI5R6V6/moc_TABLO.cpp",
@@ -430,6 +400,36 @@
 			"MU",
 			"UFHY2OPPV4/moc_veritabani.cpp",
 			null
+		],
+		[
+			"C:/MyCodes/QT/saglikocagiodev/ui/anapencere.h",
+			"MU",
+			"UYX5XTB5RZ/moc_anapencere.cpp",
+			null
+		],
+		[
+			"C:/MyCodes/QT/saglikocagiodev/ui/veri-giris/doktorekle.h",
+			"MU",
+			"B5WEUOEZHD/moc_doktorekle.cpp",
+			null
+		],
+		[
+			"C:/MyCodes/QT/saglikocagiodev/ui/veri-giris/hastaekle.h",
+			"MU",
+			"B5WEUOEZHD/moc_hastaekle.cpp",
+			null
+		],
+		[
+			"C:/MyCodes/QT/saglikocagiodev/ui/veri-liste/doktorliste.h",
+			"MU",
+			"GAQKAY3VXZ/moc_doktorliste.cpp",
+			null
+		],
+		[
+			"C:/MyCodes/QT/saglikocagiodev/ui/veri-liste/hastaliste.h",
+			"MU",
+			"GAQKAY3VXZ/moc_hastaliste.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -502,27 +502,6 @@
 	"SETTINGS_FILE" : "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/CMakeFiles/saglikocagi_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "C:/MyCodes/QT/saglikocagiodev/Ui/anapencere.cpp", "MU", null ],
-		[
-			"C:/MyCodes/QT/saglikocagiodev/Ui/veri-giris/doktorekle.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/MyCodes/QT/saglikocagiodev/Ui/veri-giris/hastaekle.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/MyCodes/QT/saglikocagiodev/Ui/veri-liste/doktorliste.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/MyCodes/QT/saglikocagiodev/Ui/veri-liste/hastaliste.cpp",
-			"MU",
-			null
-		],
 		[ "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/bulgu.cpp", "MU", null ],
 		[ "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/doktor.cpp", "MU", null ],
 		[ "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/hasta.cpp", "MU", null ],
@@ -547,7 +526,28 @@
 		[ "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/tetkik.cpp", "MU", null ],
 		[ "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/ziyaret.cpp", "MU", null ],
 		[ "C:/MyCodes/QT/saglikocagiodev/Veri/veritabani.cpp", "MU", null ],
-		[ "C:/MyCodes/QT/saglikocagiodev/main.cpp", "MU", null ]
+		[ "C:/MyCodes/QT/saglikocagiodev/main.cpp", "MU", null ],
+		[ "C:/MyCodes/QT/saglikocagiodev/ui/anapencere.cpp", "MU", null ],
+		[
+			"C:/MyCodes/QT/saglikocagiodev/ui/veri-giris/doktorekle.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/MyCodes/QT/saglikocagiodev/ui/veri-giris/hastaekle.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/MyCodes/QT/saglikocagiodev/ui/veri-liste/doktorliste.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/MyCodes/QT/saglikocagiodev/ui/veri-liste/hastaliste.cpp",
+			"MU",
+			null
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

@@ -1,5 +1,5 @@
 #include "hastaekle.h"
-#include "Ui/veri-giris/ui_hastaekle.h"
+#include "ui/veri-giris/ui_hastaekle.h"
 
 HastaEkle::HastaEkle(QWidget *parent)
     : QDialog(parent)

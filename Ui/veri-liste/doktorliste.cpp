@@ -1,5 +1,5 @@
 #include "doktorliste.h"
-#include "Ui/veri-liste/ui_doktorliste.h"
+#include "ui/veri-liste/ui_doktorliste.h"
 
 #include "../../Veri/veritabani.h"
 

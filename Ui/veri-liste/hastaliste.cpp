@@ -1,5 +1,5 @@
 #include "hastaliste.h"
-#include "Ui/veri-liste/ui_hastaliste.h"
+#include "ui/veri-liste/ui_hastaliste.h"
 
 #include "../../Veri/veritabani.h"
 

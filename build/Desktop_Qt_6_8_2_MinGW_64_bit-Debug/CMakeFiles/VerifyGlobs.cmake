@@ -41,11 +41,6 @@ endif()
 # _directory_contents at C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/MyCodes/QT/saglikocagiodev/*.cpp")
 set(OLD_GLOB
-  "C:/MyCodes/QT/saglikocagiodev/Ui/anapencere.cpp"
-  "C:/MyCodes/QT/saglikocagiodev/Ui/veri-giris/doktorekle.cpp"
-  "C:/MyCodes/QT/saglikocagiodev/Ui/veri-giris/hastaekle.cpp"
-  "C:/MyCodes/QT/saglikocagiodev/Ui/veri-liste/doktorliste.cpp"
-  "C:/MyCodes/QT/saglikocagiodev/Ui/veri-liste/hastaliste.cpp"
   "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/bulgu.cpp"
   "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/doktor.cpp"
   "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/hasta.cpp"
@@ -69,6 +64,11 @@ set(OLD_GLOB
   "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/saglikocagi_autogen/mocs_compilation.cpp"
   "C:/MyCodes/QT/saglikocagiodev/main.cpp"
+  "C:/MyCodes/QT/saglikocagiodev/ui/anapencere.cpp"
+  "C:/MyCodes/QT/saglikocagiodev/ui/veri-giris/doktorekle.cpp"
+  "C:/MyCodes/QT/saglikocagiodev/ui/veri-giris/hastaekle.cpp"
+  "C:/MyCodes/QT/saglikocagiodev/ui/veri-liste/doktorliste.cpp"
+  "C:/MyCodes/QT/saglikocagiodev/ui/veri-liste/hastaliste.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -87,11 +87,6 @@ endif()
 # _directory_contents at C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/MyCodes/QT/saglikocagiodev/*.h")
 set(OLD_GLOB
-  "C:/MyCodes/QT/saglikocagiodev/Ui/anapencere.h"
-  "C:/MyCodes/QT/saglikocagiodev/Ui/veri-giris/doktorekle.h"
-  "C:/MyCodes/QT/saglikocagiodev/Ui/veri-giris/hastaekle.h"
-  "C:/MyCodes/QT/saglikocagiodev/Ui/veri-liste/doktorliste.h"
-  "C:/MyCodes/QT/saglikocagiodev/Ui/veri-liste/hastaliste.h"
   "C:/MyCodes/QT/saglikocagiodev/Veri/Araclar/TABLO.h"
   "C:/MyCodes/QT/saglikocagiodev/Veri/Araclar/TABLO_TANIMLARI.h"
   "C:/MyCodes/QT/saglikocagiodev/Veri/Araclar/enums.h"
@@ -114,6 +109,11 @@ set(OLD_GLOB
   "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/include/ui_anapencere.h"
   "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/moc_predefs.h"
   "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/saglikocagi_autogen/moc_predefs.h"
+  "C:/MyCodes/QT/saglikocagiodev/ui/anapencere.h"
+  "C:/MyCodes/QT/saglikocagiodev/ui/veri-giris/doktorekle.h"
+  "C:/MyCodes/QT/saglikocagiodev/ui/veri-giris/hastaekle.h"
+  "C:/MyCodes/QT/saglikocagiodev/ui/veri-liste/doktorliste.h"
+  "C:/MyCodes/QT/saglikocagiodev/ui/veri-liste/hastaliste.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -214,11 +214,11 @@ endif()
 # _directory_contents at C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/MyCodes/QT/saglikocagiodev/*.ui")
 set(OLD_GLOB
-  "C:/MyCodes/QT/saglikocagiodev/Ui/anapencere.ui"
-  "C:/MyCodes/QT/saglikocagiodev/Ui/veri-giris/doktorekle.ui"
-  "C:/MyCodes/QT/saglikocagiodev/Ui/veri-giris/hastaekle.ui"
-  "C:/MyCodes/QT/saglikocagiodev/Ui/veri-liste/doktorliste.ui"
-  "C:/MyCodes/QT/saglikocagiodev/Ui/veri-liste/hastaliste.ui"
+  "C:/MyCodes/QT/saglikocagiodev/ui/anapencere.ui"
+  "C:/MyCodes/QT/saglikocagiodev/ui/veri-giris/doktorekle.ui"
+  "C:/MyCodes/QT/saglikocagiodev/ui/veri-giris/hastaekle.ui"
+  "C:/MyCodes/QT/saglikocagiodev/ui/veri-liste/doktorliste.ui"
+  "C:/MyCodes/QT/saglikocagiodev/ui/veri-liste/hastaliste.ui"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
