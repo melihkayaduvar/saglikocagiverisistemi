@@ -13,6 +13,17 @@ class anapencere : public QMainWindow
 public:
     explicit anapencere(QWidget *parent = nullptr);
     ~anapencere();
+
+
+private slots:
+    void on_action_k_triggered();
+
+    void on_actiondoktorekle_triggered();
+
 private:
     Ui::anapencere *ui;
+
+    // QWidget interface
+protected:
+    void closeEvent(QCloseEvent *event);
 };

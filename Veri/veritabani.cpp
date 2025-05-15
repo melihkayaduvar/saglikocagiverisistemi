@@ -76,7 +76,12 @@ void VERITABANI::kaydet()
     //QFile veritabaniDosyasi2(dosyaYolu2);
 
     //1. Yol
-    QString dosyaYolu=QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+    QString dosyaYolu=QStandardPaths::writableLocation(
+        QStandardPaths::AppDataLocation);
+    QDir appDataDir(dosyaYolu);
+    if(!appDataDir.exists("AileSaglikOcagi")){
+        appDataDir.mkpath("AileSaglikOcagi");
+    }
     QDir veriKlasoru(dosyaYolu+"/AileSaglikOcagi");
     QFile veritabaniDosyasi(veriKlasoru.filePath("database.aso"));
 
@@ -199,7 +204,7 @@ void VERITABANI::kaydet()
             ts<<tblReceteKalemi._elemanlar[i]->receteid();
             ts<<tblReceteKalemi._elemanlar[i]->ilacid();
         }
-
+        veritabaniDosyasi.close();
     }
 
 }
@@ -212,6 +217,7 @@ void VERITABANI::geriyukle()
         return;
     }
     QFile veritabaniDosyasi(veriKlasoru.filePath("database.aso"));
+
     if(veritabaniDosyasi.open(QIODevice::ReadOnly)){
         QDataStream ts(&veritabaniDosyasi);
 

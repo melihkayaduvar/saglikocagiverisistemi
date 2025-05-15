@@ -312,6 +312,18 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/MyCodes/QT/saglikocagiodev/Ui/anapencere.h",
+			"MU",
+			"5OUZVNNGVJ/moc_anapencere.cpp",
+			null
+		],
+		[
+			"C:/MyCodes/QT/saglikocagiodev/Ui/veri-giris/doktorekle.h",
+			"MU",
+			"JNG6WA7QYF/moc_doktorekle.cpp",
+			null
+		],
+		[
 			"C:/MyCodes/QT/saglikocagiodev/Veri/Araclar/TABLO.h",
 			"MU",
 			"UNXDI5R6V6/moc_TABLO.cpp",
@@ -396,12 +408,6 @@
 			null
 		],
 		[
-			"C:/MyCodes/QT/saglikocagiodev/Veri/anapencere.h",
-			"MU",
-			"UFHY2OPPV4/moc_anapencere.cpp",
-			null
-		],
-		[
 			"C:/MyCodes/QT/saglikocagiodev/Veri/veritabani.h",
 			"MU",
 			"UFHY2OPPV4/moc_veritabani.cpp",
@@ -478,6 +484,12 @@
 	"SETTINGS_FILE" : "C:/MyCodes/QT/saglikocagiodev/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/CMakeFiles/saglikocagi_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "C:/MyCodes/QT/saglikocagiodev/Ui/anapencere.cpp", "MU", null ],
+		[
+			"C:/MyCodes/QT/saglikocagiodev/Ui/veri-giris/doktorekle.cpp",
+			"MU",
+			null
+		],
 		[ "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/bulgu.cpp", "MU", null ],
 		[ "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/doktor.cpp", "MU", null ],
 		[ "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/hasta.cpp", "MU", null ],
@@ -501,7 +513,6 @@
 		],
 		[ "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/tetkik.cpp", "MU", null ],
 		[ "C:/MyCodes/QT/saglikocagiodev/Veri/Siniflar/ziyaret.cpp", "MU", null ],
-		[ "C:/MyCodes/QT/saglikocagiodev/Veri/anapencere.cpp", "MU", null ],
 		[ "C:/MyCodes/QT/saglikocagiodev/Veri/veritabani.cpp", "MU", null ],
 		[ "C:/MyCodes/QT/saglikocagiodev/main.cpp", "MU", null ]
 	],

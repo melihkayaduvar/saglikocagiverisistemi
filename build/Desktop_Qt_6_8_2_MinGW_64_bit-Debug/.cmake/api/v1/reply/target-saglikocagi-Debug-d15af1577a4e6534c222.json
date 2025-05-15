@@ -50,13 +50,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 38,
+				"line" : 39,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 29,
+				"line" : 30,
 				"parent" : 0
 			},
 			{
@@ -98,7 +98,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 28,
+				"line" : 29,
 				"parent" : 0
 			},
 			{
@@ -275,8 +275,8 @@
 			[
 				0,
 				1,
-				6,
-				8,
+				3,
+				5,
 				10,
 				12,
 				14,
@@ -287,7 +287,9 @@
 				24,
 				26,
 				28,
-				30
+				30,
+				32,
+				40
 			]
 		}
 	],
@@ -395,8 +397,8 @@
 			[
 				0,
 				1,
-				6,
-				8,
+				3,
+				5,
 				10,
 				12,
 				14,
@@ -407,7 +409,9 @@
 				24,
 				26,
 				28,
-				30
+				30,
+				32,
+				40
 			]
 		},
 		{
@@ -415,17 +419,17 @@
 			"sourceIndexes" : 
 			[
 				2,
-				34
+				39
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				3,
 				4,
-				5,
+				6,
 				7,
+				8,
 				9,
 				11,
 				13,
@@ -438,21 +442,32 @@
 				27,
 				29,
 				31,
-				33
+				33,
+				37,
+				38
 			]
 		},
 		{
 			"name" : "Forms",
 			"sourceIndexes" : 
 			[
-				32
+				34,
+				35
+			]
+		},
+		{
+			"name" : "Resources",
+			"sourceIndexes" : 
+			[
+				36
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				35
+				41,
+				42
 			]
 		}
 	],
@@ -475,6 +490,28 @@
 			"backtrace" : 1,
 			"path" : "saglikocagi_tr_TR.ts",
 			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Ui/anapencere.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Ui/anapencere.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Ui/veri-giris/doktorekle.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Ui/veri-giris/doktorekle.h",
+			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 1,
@@ -615,17 +652,6 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Veri/anapencere.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Veri/anapencere.h",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
 			"path" : "Veri/veritabani.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -636,13 +662,29 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Veri/anapencere.ui",
+			"path" : "Ui/anapencere.ui",
 			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Ui/veri-giris/doktorekle.ui",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "kaynakdosyalar\u0131/resource.qrc",
+			"sourceGroupIndex" : 4
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/include/Veri/ui_anapencere.h",
+			"path" : "build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/include/Ui/ui_anapencere.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/include/Ui/veri-giris/ui_doktorekle.h",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -653,9 +695,22 @@
 		},
 		{
 			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/Y76VNH3VYH/qrc_resource.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/timestamp.rule",
-			"sourceGroupIndex" : 4
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/saglikocagi_autogen/Y76VNH3VYH/qrc_resource.cpp.rule",
+			"sourceGroupIndex" : 5
 		}
 	],
 	"type" : "EXECUTABLE"

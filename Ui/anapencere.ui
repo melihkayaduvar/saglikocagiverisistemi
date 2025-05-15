@@ -11,53 +11,18 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Sağlık Ocağı Ana Pencere</string>
   </property>
   <property name="styleSheet">
    <string notr="true">/* Hastane Teması QSS */
 QMainWindow#anapencere{
 	border-image: url(:/new/background/main-background)
 }
-QWidget {
-    font-family: Arial, sans-serif;
+QWidget{
+	font-family: Arial, sans-serif;
     color: #333; /* Metin rengi */
     border-radius: 5px;
     padding: 10px;
-}
-
-QPushButton {
-    background-color: #4CAF50; /* Yeşil buton */
-    color: white;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-}
-
-QPushButton:hover {
-    background-color: #45a049; /* Hover durumunda daha koyu yeşil */
-}
-
-QPushButton:pressed {
-    background-color: #388e3c; /* Tıklanma sonrası yeşil */
-}
-
-QLineEdit {
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    padding: 8px;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-QLineEdit:focus {
-    border-color: #4CAF50; /* Odaklandığında yeşil sınır */
-}
-
-QLabel {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 5px;
 }
 
 QComboBox {
@@ -191,8 +156,8 @@ QMenu::item:hover {
      <rect>
       <x>0</x>
       <y>130</y>
-      <width>341</width>
-      <height>221</height>
+      <width>381</width>
+      <height>231</height>
      </rect>
     </property>
     <property name="font">
@@ -210,7 +175,23 @@ QMenu::item:hover {
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true"/>
+     <string notr="true">QPushButton{
+    background-color: #4CAF50; /* Yeşil buton */
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+}
+
+QPushButton:hover {
+    background-color: #45a049; /* Hover durumunda daha koyu yeşil */
+}
+
+QPushButton:pressed {
+    background-color: #388e3c; /* Tıklanma sonrası yeşil */
+}
+</string>
     </property>
     <property name="tabPosition">
      <enum>QTabWidget::TabPosition::West</enum>
@@ -233,7 +214,7 @@ QMenu::item:hover {
      </attribute>
      <layout class="QGridLayout" name="gridLayout">
       <item row="0" column="0">
-       <widget class="QPushButton" name="Buttonnewdok">
+       <widget class="QPushButton" name="Buttonnewdoktor">
         <property name="font">
          <font>
           <family>Arial</family>
@@ -382,76 +363,218 @@ QMenu::item:hover {
     <property name="title">
      <string>Doktor</string>
     </property>
-    <addaction name="actionEkle"/>
-    <addaction name="actionDoktorlar"/>
+    <addaction name="actiondoktorekle"/>
+    <addaction name="actiondoktorlist"/>
    </widget>
    <widget class="QMenu" name="menuHasta">
     <property name="title">
      <string>Hasta</string>
     </property>
-    <addaction name="actionHasta_Ekle"/>
-    <addaction name="actionHastalar"/>
+    <addaction name="actionhastaekle"/>
+    <addaction name="actionhastalist"/>
    </widget>
    <widget class="QMenu" name="menuZiyaret">
     <property name="title">
      <string>Ziyaret</string>
     </property>
-    <addaction name="actionYeni_Ziyaret"/>
-    <addaction name="actionZiyaretler"/>
+    <addaction name="actionziyaretekle"/>
+    <addaction name="actionziyaretlist"/>
    </widget>
    <widget class="QMenu" name="menu_la">
     <property name="title">
      <string>İlaç</string>
     </property>
-    <addaction name="actionYeni_lac"/>
-    <addaction name="action_la_lar"/>
+    <addaction name="actionilacekle"/>
+    <addaction name="actionilaclist"/>
    </widget>
+   <widget class="QMenu" name="menuDosya">
+    <property name="title">
+     <string>Dosya</string>
+    </property>
+    <addaction name="action_k"/>
+   </widget>
+   <addaction name="menuDosya"/>
    <addaction name="menuDoktor"/>
    <addaction name="menuHasta"/>
    <addaction name="menuZiyaret"/>
    <addaction name="menu_la"/>
   </widget>
-  <action name="actionEkle">
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actiondoktorekle">
    <property name="text">
     <string>Yeni Doktor</string>
    </property>
   </action>
-  <action name="actionDoktorlar">
+  <action name="actiondoktorlist">
    <property name="text">
-    <string>Doktorlar</string>
+    <string>Doktor Listesi</string>
    </property>
   </action>
-  <action name="actionHasta_Ekle">
+  <action name="actionhastaekle">
    <property name="text">
     <string>Yeni Hasta</string>
    </property>
   </action>
-  <action name="actionHastalar">
+  <action name="actionhastalist">
    <property name="text">
-    <string>Hastalar</string>
+    <string>Hasta Liste</string>
    </property>
   </action>
-  <action name="actionZiyaretler">
+  <action name="actionziyaretlist">
    <property name="text">
-    <string>Ziyaretler</string>
+    <string>Ziyaret Liste</string>
    </property>
   </action>
-  <action name="actionYeni_Ziyaret">
+  <action name="actionziyaretekle">
    <property name="text">
     <string>Yeni Ziyaret</string>
    </property>
   </action>
-  <action name="actionYeni_lac">
+  <action name="actionilacekle">
    <property name="text">
     <string>Yeni İlaç</string>
    </property>
   </action>
-  <action name="action_la_lar">
+  <action name="actionilaclist">
    <property name="text">
-    <string>İlaçlar</string>
+    <string>İlaç Liste</string>
+   </property>
+  </action>
+  <action name="action_k">
+   <property name="text">
+    <string>Çıkış</string>
    </property>
   </action>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>Buttonnewdoktor</sender>
+   <signal>clicked()</signal>
+   <receiver>actiondoktorekle</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>140</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Buttondoktorlist</sender>
+   <signal>clicked()</signal>
+   <receiver>actiondoktorlist</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>290</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Buttonnewhasta</sender>
+   <signal>clicked()</signal>
+   <receiver>actionhastaekle</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>140</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Buttonhastalist</sender>
+   <signal>clicked()</signal>
+   <receiver>actionhastalist</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>290</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Buttonilaclist</sender>
+   <signal>clicked()</signal>
+   <receiver>actionilaclist</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>290</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Buttonnewilac</sender>
+   <signal>clicked()</signal>
+   <receiver>actionilacekle</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>140</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Buttonnewziyaret</sender>
+   <signal>clicked()</signal>
+   <receiver>actionziyaretekle</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>140</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Buttonziyaretlist</sender>
+   <signal>clicked()</signal>
+   <receiver>actionziyaretlist</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>290</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
